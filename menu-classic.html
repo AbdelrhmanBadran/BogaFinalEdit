@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from 7oroof.com/demos/babette/menu-classic.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Jun 2023 18:00:17 GMT -->
+<!-- Mirrored from 7oroof.com/demos/BOGA/our-story.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Jun 2023 17:59:10 GMT -->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="BOGA">
+  <link href="assets/images/new.png" rel="icon">
+  <title>BOGA</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Rubik:400,500,700%7cShadows+Into+Light&amp;display=swap">
+  <link rel="stylesheet" href="assets/css/libraries.css" />
+  <link rel="stylesheet" href="./assets/css/slick.css">
+  <link rel="stylesheet" href="./assets/css/slick-theme.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/Bstyle.css" />
+</head>
+<style>
+  
+
+
+
+  .category-text {
+    /* color: white; */
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .card {
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+
+  .card-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  
+
+  .card-sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+
+  .card-sections>div {
+    margin-bottom: 15px;
+  }
+
+  .card-sections h5 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  
+
+  .btn-add-to-cart:hover  {
+    background-color: #4CA85D;
+    color: #fff;
+  }
+
+</style>
+
+
+<body>
+  <div class="wrapper">
+    <!-- =========================
+        Header
+    =========================== -->
+    <header id="header" class="header header-transparent header-layout1">
+      <nav class="navbar navbar-expand-lg sticky-navbar">
+        <div class="container flex-row position-relative">
+          
+          <button class="navbar-toggler" type="button">
+            <span class="menu-lines"><span></span></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNavigation">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav__item with-dropdown">
+                <a href="index.html" class="dropdown-toggle nav__item-link ">Home</a>
+              </li><!-- /.nav-item -->
+
+              <li class="nav__item with-dropdown">
+                <a href="menu-classic.html" class="dropdown-toggle nav__item-link active">Menu</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item with-dropdown">
+                <a href="BStory.html" class="dropdown-toggle nav__item-link">Story</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item with-dropdown">
+                <a href="contacts.html" class="dropdown-toggle nav__item-link">Contact</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item with-dropdown">
+                <a href="cart.html" class="dropdown-toggle nav__item-link">cart</a>
+              </li><!-- /.nav-item -->
+            </ul><!-- /.navbar-nav -->
+            <div class="navbar-actions-wrap mr-5 mb-3">
+              <div class="navbar-actions d-flex align-items-center">
+                
+                <a href="#" class="navbar__action-btn navbar__action-btn-cart">
+                  <i class="fa fa-shopping-cart"></i><span class="cart__label">3</span>
+                </a>
+                <div class="cart-popup">
+                  <ul class="list-unstyled">
+                    <li class="cart-item">
+                      <div class="cart__item-img"><img src="assets/images/shop/grid/1.jpg" alt="thumb"></div>
+                      <div class="cart__item-content">
+                        <h6 class="cart__item-title">Roast Sea Trout</h6>
+                        <div class="cart__item-detail">$ 38.00</div>
+                        <i class="cart__item-delete">&times;</i>
+                      </div><!-- /.cart-item-content -->
+                    </li><!-- /.cart-item -->
+                    <li class="cart-item">
+                      <div class="cart__item-img"><img src="assets/images/shop/grid/3.jpg" alt="thumb"></div>
+                      <div class="cart__item-content">
+                        <h6 class="cart__item-title">Roasted Steak Rou</h6>
+                        <div class="cart__item-detail">$ 29.00</div>
+                        <i class="cart__item-delete">&times;</i>
+                      </div><!-- /.cart-item-content -->
+                    </li><!-- /.cart-item -->
+                  </ul>
+                  <div class="cart-subtotal">
+                    <span>Subtotal:</span>
+                    <span class="color-theme">$67.00</span>
+                  </div><!-- /.cart-subtotal -->
+                  <div class="cart-action d-flex justify-content-between">
+                    <a href="cart.html" class="btn btn__primary btn__hover2">View Cart</a>
+                    <a href="checkout.html" class="btn btn__white">Checkout</a>
+                  </div><!-- /.cart-action -->
+                </div><!-- /.cart-popup -->
+              </div><!-- /.navbar-actions -->
+            </div><!-- /.navbar-actions-wrap -->
+
+          </div><!-- /.navbar-collapse -->
+
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/navlogo.png" class="logo-light" alt="logo">
+          </a>
+        </div><!-- /.container -->
+      </nav><!-- /.navabr -->
+    </header>
+
+    <!--===================== header==============================  -->
+
+    <section id="menulayout5" class="tabs-slider pt-5">
+      <div class="bg-img"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="menu-wrapper">
+              <nav class="nav nav-tabs d-flex justify-content-evenly ">
+                <a class="nav__link active" data-toggle="tab" href="#tab1">
+                  <div class="circle">
+                    <img src="assets/images/salads.png" ">
+                    <span class="category-text">Salads</span>
+                  </div>
+                </a>
+                <a class="nav__link" data-toggle="tab" href="#tab2"   >
+                  <div class="circle">
+                    <img src="assets/images/Sandwich.png" ">
+                    <span class="category-text">Sandwich</span>
+                  </div>
+                </a>
+                <a class="nav__link" data-toggle="tab" href="#tab3">
+                  <div class="circle">
+                    <img src="assets/images/plates.png" ">
+                    <span class="category-text">Daily Value</span>
+                  </div>
+                </a>
+                <a class="nav__link" data-toggle="tab" href="#tab4">
+                  <div class="circle">
+                    <img src="assets/images/juices.png" ">
+                    <span class="category-text">Fresh Juices</span>
+                  </div>
+                </a>
+                <a class="nav__link" data-toggle="tab" href="#tab5">
+                  <div class="circle">
+                    <img src="assets/images/coffe.png" ">
+                    <span class="category-text">Boga Cafe</span>
+                  </div>
+                </a>
+              </nav>
+            </div><!-- /.menu-wrapper -->
+          </div><!-- /.col-lg-12 -->
+          <div class="tab-content pt-5">
+            <div class="tab-pane fade show active" id="tab1">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    
+                    <div class="col-lg-6">
+                      <div class="card-content">
+                        <h4 class="card-title text-center" >APPLE QUIONA</h4>
+                        
+                        <div class="card-description text-uppercase mt-3">
+                          <p>
+                            Spring mix quiona,orange slices red apple slices, mint leaves, Pegans
+                          </p>
+                        </div>
+                        <div class="row">
+                          
+                          <div class="col-12 my-2">
+                            <div class="nourish d-flex justify-content-around align-items-end">
+                              <div class="d-flex flex-column align-items-center justify-content-center">
+                                <img src="./assets/images/nourish.png" class="w-100 nourish1"  alt="">
+                                <p class="mt-10  price">50 AED</p>
+                              </div>
+                              <div class="d-flex flex-column align-items-center justify-content-center">
+                                <img src="./assets/images/nourish+.png" class="w-100 nourish2" alt="">
+                                <p class="mt-10  price">60 AED</p>
+
+                              </div>
+                              <div class="d-flex flex-column align-items-center justify-content-center">
+                                <img src="./assets/images/nourish++.png" class="w-100 nourish3"  alt="">
+                                <p class="mt-10  price">75 AED</p>
+
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-12 mb-2">
+
+
+                            <div class="d-flex flex-column justify-content-start">
+                              <div class="btn-fact d-flex align-items-center" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <div class="kcal d-flex justify-content-end">
+                                  <img src="./assets/images/kcal.png" class="w-50 d-block" alt="">
+                                </div>
+                              <div class="d-flex position-relative fact-text-container">
+                                <p class="fact-text">
+                                  Nutirtion <br> Facts
+                                </p>
+                                <span class="fact-circle"></span>
+                              </div>
+                              </div>
+  
+                              
+                              <div class="collapse" id="collapseExample1">
+                                <div class="facts">
+                                  <div class="container">
+                                    <div class="row">
+                                      <div class="col-4">
+                                        <div class="right">
+                                          <div class="fact-header pb-2">
+                                            <h4 >Nutrition <br> Facts</h4>
+                                          </div>
+                                          <div class="fact-footer d-flex justify-content-between my-3">
+                                            <p class="text-uppercase">serving</p>
+                                            <p >100 G</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-4 ">
+                                        <div class="center-details">
+                                          <div class="center ">
+                                            <div class="d-flex justify-content-between  border-bottom top-center">
+                                              <p >Callories</p>
+                                              <p class="text-uppercase">45kg / 98 Kcal</p>
+                                            </div>
+                                          </div>
+                                          <div class="center">
+                                            <div class=" border-bottom ">
+                                              <p class="text-uppercase text-right">% Daily Value</p>
+                                            </div>
+                                          </div>
+                                          <div class="center">
+                                            <div class="d-flex justify-content-between  border-bottom ">
+                                              <p >Total Fats</p>
+                                              <p class="text-uppercase">8%</p>
+                                            </div>
+                                          </div>
+                                          <div class="center">
+                                            <div class="d-flex justify-content-between  border-bottom ">
+                                              <p >Saturated Fats</p>
+                                              <p class="text-uppercase">4%</p>
+                                            </div>
+                                          </div>
+                                          <div class="center">
+                                            <div class="d-flex justify-content-between  border-bottom ">
+                                              <p >Sugars</p>
+                                              <p class="text-uppercase">4%</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-4 ">
+                                        <div class="left-details">
+                                          <div class="left left-top">
+                                            <div class="d-flex justify-content-between  border-bottom ">
+                                              <p >Proten 0g</p>
+                                              <p class="text-uppercase">%</p>
+                                            </div>
+                                          </div>
+                                          <div class="left">
+                                            <div class="d-flex justify-content-between  border-bottom ">
+                                              <p >Vitnam A</p>
+                                              <p class="text-uppercase">0 %</p>
+                                            </div>
+                                          </div>
+                                          <div class="left">
+                                            <div class="d-flex justify-content-between  border-bottom ">
+                                              <p >Vitnam B</p>
+                                              <p class="text-uppercase">0 %</p>
+                                            </div>
+                                          </div>
+                                          <div class="left">
+                                            <div class="d-flex justify-content-between  border-bottom ">
+                                              <p >Vitnam C</p>
+                                              <p class="text-uppercase">0 %</p>
+                                            </div>
+                                          </div>
+                                          <div class="left">
+                                            <div class="d-flex justify-content-between  border-bottom ">
+                                              <p >Vitnam D</p>
+                                              <p class="text-uppercase">0 %</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+
+                          </div>
+                        </div>
+                        <div class="add-to-cart-button">
+                          <button class="btn-add-to-cart"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="main-slider">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="slick-slider">
+                                <div class="item-menu">
+                                  <img src="./assets//images/plate1.png" class="img-fluid image" alt="">
+                                </div>
+                                <div class="item-menu">
+                                  <img src="./assets//images/plate2.png" class="img-fluid image" alt="">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    
+                    <div class="col-lg-6">
+                      <div class="card-content">
+                        <h4 class="card-title text-center text-uppercase" >Very berry</h4>
+                      
+                        <div class="card-description mt-3">
+                          <p>
+                            Spring mix, Mix berries, pecans, strawberry, vinaigrette
+                          </p>
+                        </div>
+                        <div class="row">
+
+                          <div class="col-12 my-2">
+                            <div class="nourish d-flex justify-content-around align-items-end">
+                              <div class="d-flex flex-column align-items-end">
+                                <img src="./assets/images/nourish.png" class="w-100 nourish1"  alt="">
+                                <p class="mt-10  price">50 AED</p>
+                              </div>
+                              <div class="d-flex flex-column align-items-end">
+                                <img src="./assets/images/nourish+.png" class="w-100 nourish2" alt="">
+                                <p class="mt-10  price">60 AED</p>
+
+                              </div>
+                              <div class="d-flex flex-column align-items-end">
+                                <img src="./assets/images/nourish++.png" class="w-100 nourish3"  alt="">
+                                <p class="mt-10  price">75 AED</p>
+
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-12 ">
+                          
+
+                            <div class="d-flex flex-column justify-content-start">
+
+                              <div class="btn-fact d-flex align-items-center" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <div class="kcal d-flex justify-content-end">
+                                  <img src="./assets/images/kcal.png" class="w-50 d-block" alt="">
+                                </div>
+                              <div class="d-flex position-relative fact-text-container">
+                                <p class="fact-text">
+                                  Nutirtion <br> Facts
+                                </p>
+                                <span class="fact-circle"></span>
+                              </div>
+                              </div>
+  
+  
+                              <div class="collapse" id="collapseExample2">
+                                <div class="facts">
+                                  <div class="container">
+                                    <div class="row">
+                                      <div class="col-4">
+                                        <div class="right">
+                                          <div class="fact-header pb-2">
+                                            <h4 >Nutrition <br> Facts</h4>
+                                          </div>
+                                          <div class="fact-footer d-flex justify-content-between my-3">
+                                            <p class="text-uppercase">serving</p>
+                                            <p >100 G</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-4 ">
+                                        <div class="center-details">
+                                          <div class="center">
+                                            <div class="d-flex justify-content-between  border-bottom top-center">
+                                              <p >Callories</p>
+                                              <p class="text-uppercase">45kg / 98 Kcal</p>
+                                            </div>
+                                          </div>
+                                          <div class="center">
+                                            <div class=" border-bottom ">
+                                              <p class="text-uppercase text-right">% Daily Value</p>
+                                            </div>
+                                          </div>
+                                          <div class="center">
+                                            <div class="d-flex justify-content-between  border-bottom ">
+                                              <p >Total Fats</p>
+                                              <p class="text-uppercase">8%</p>
+                                            </div>
+                                          </div>
+                                          <div class="center">
+                                            <div class="d-flex justify-content-between  border-bottom ">
+                                              <p >Saturated Fats</p>
+                                              <p class="text-uppercase">4%</p>
+                                            </div>
+                                          </div>
+                                          <div class="center">
+                                            <div class="d-flex justify-content-between  border-bottom ">
+                                              <p >Sugars</p>
+                                              <p class="text-uppercase">4%</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-4 ">
+                                        <div class="left-details">
+                                          <div class="left left-top">
+                                            <div class="d-flex justify-content-between  border-bottom ">
+                                              <p >Proten 0g</p>
+                                              <p class="text-uppercase">%</p>
+                                            </div>
+                                          </div>
+                                          <div class="left">
+                                            <div class="d-flex justify-content-between  border-bottom ">
+                                              <p >Vitnam A</p>
+                                              <p class="text-uppercase">0 %</p>
+                                            </div>
+                                          </div>
+                                          <div class="left">
+                                            <div class="d-flex justify-content-between  border-bottom ">
+                                              <p >Vitnam B</p>
+                                              <p class="text-uppercase">0 %</p>
+                                            </div>
+                                          </div>
+                                          <div class="left">
+                                            <div class="d-flex justify-content-between  border-bottom ">
+                                              <p >Vitnam C</p>
+                                              <p class="text-uppercase">0 %</p>
+                                            </div>
+                                          </div>
+                                          <div class="left">
+                                            <div class="d-flex justify-content-between  border-bottom ">
+                                              <p >Vitnam D</p>
+                                              <p class="text-uppercase">0 %</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                        <div class="add-to-cart-button">
+                          <button class="btn-add-to-cart"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="main-slider">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="slick-slider">
+                                <div class="item-menu">
+                                  <img src="./assets//images/plate2.png" class="img-fluid image" alt="">
+                                </div>
+                                <div class="item-menu">
+                                  <img src="./assets//images/plate2.png" class="img-fluid image" alt="">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="tab2">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row">
+                    
+                    <div class="col-lg-6">
+                      <div class="card-content">
+                        <h4 class="card-title text-center" >APPLE QUIONA</h4>
+                        
+                        <div class="card-description text-uppercase mt-3">
+                          <p>
+                            Spring mix quiona,orange slices red apple slices, mint leaves, Pegans
+                          </p>
+                        </div>
+                        <div class="row">
+                          
+                          <div class="col-12 my-2">
+                            <div class="nourish d-flex justify-content-around align-items-end">
+                              <div class="d-flex flex-column align-items-end">
+                                <img src="./assets/images/nourish.png" class="w-100 nourish1"  alt="">
+                                <p class="mt-10  price">50 AED</p>
+                              </div>
+                              <div class="d-flex flex-column align-items-end">
+                                <img src="./assets/images/nourish+.png" class="w-100 nourish2" alt="">
+                                <p class="mt-10  price">60 AED</p>
+
+                              </div>
+                              <div class="d-flex flex-column align-items-end">
+                                <img src="./assets/images/nourish++.png" class="w-100 nourish3"  alt="">
+                                <p class="mt-10  price">75 AED</p>
+
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-md-12">
+                            <div class="d-flex flex-column justify-content-start">
+                              <div class="btn-fact d-flex align-items-center" data-bs-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <div class="kcal d-flex justify-content-end">
+                                  <img src="./assets/images/kcal.png" class="w-50 d-block" alt="">
+                                </div>
+                                <div class="d-flex position-relative fact-text-container">
+                                  <p class="fact-text">
+                                    Nutirtion <br> Facts
+                                  </p>
+                                  <span class="fact-circle"></span>
+                                </div>
+                              </div>
+  
+                              
+                              <div class="collapse" id="collapseExample3">
+                                <div class="facts">
+                                  <div class="container">
+                                    <div class="row">
+                                      <div class="col-4">
+                                        <div class="right">
+                                          <div class="fact-header pb-2">
+                                            <h4 >Nutrition <br> Facts</h4>
+                                          </div>
+                                          <div class="fact-footer d-flex justify-content-between my-3">
+                                            <p class="text-uppercase">serving</p>
+                                            <p >100 G</p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-4 ">
+                                        <div class="center-details">
+                                          <div class="center">
+                                            <div class="d-flex justify-content-between  border-bottom ">
+                                              <p >Callories</p>
+                                              <p class="text-uppercase">45kg / 98 Kcal</p>
+                                            </div>
+                                          </div>
+                                          <div class="center">
+                                            <div class=" border-bottom ">
+                                              <p class="text-uppercase text-right">% Daily Value</p>
+                                            </div>
+                                          </div>
+                                          <div class="center">
+                                            <div class="d-flex justify-content-between  border-bottom ">
+                                              <p >Total Fats</p>
+                                              <p class="text-uppercase">8%</p>
+                                            </div>
+                                          </div>
+                                          <div class="center">
+                                            <div class="d-flex justify-content-between  border-bottom ">
+                                              <p >Saturated Fats</p>
+                                              <p class="text-uppercase">4%</p>
+                                            </div>
+                                          </div>
+                                          <div class="center">
+                                            <div class="d-flex justify-content-between  border-bottom ">
+                                              <p >Sugars</p>
+                                              <p class="text-uppercase">4%</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div class="col-4 ">
+                                        <div class="left-details">
+                                          <div class="left left-top">
+                                            <div class="d-flex justify-content-between  border-bottom ">
+                                              <p >Proten 0g</p>
+                                              <p class="text-uppercase">%</p>
+                                            </div>
+                                          </div>
+                                          <div class="left">
+                                            <div class="d-flex justify-content-between  border-bottom ">
+                                              <p >Vitnam A</p>
+                                              <p class="text-uppercase">0 %</p>
+                                            </div>
+                                          </div>
+                                          <div class="left">
+                                            <div class="d-flex justify-content-between  border-bottom ">
+                                              <p >Vitnam B</p>
+                                              <p class="text-uppercase">0 %</p>
+                                            </div>
+                                          </div>
+                                          <div class="left">
+                                            <div class="d-flex justify-content-between  border-bottom ">
+                                              <p >Vitnam C</p>
+                                              <p class="text-uppercase">0 %</p>
+                                            </div>
+                                          </div>
+                                          <div class="left">
+                                            <div class="d-flex justify-content-between  border-bottom ">
+                                              <p >Vitnam D</p>
+                                              <p class="text-uppercase">0 %</p>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="add-to-cart-button">
+                          <button class="btn-add-to-cart"><i class="fa fa-shopping-cart"></i> Add to Cart</button>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                      <div class="main-slider">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="slick-slider">
+                                <div class="item-menu">
+                                  <img src="./assets//images/plate1.png" class="img-fluid image" alt="">
+                                </div>
+                                <div class="item-menu">
+                                  <img src="./assets//images/plate2.png" class="img-fluid image" alt="">
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="tab3">
+              </div>
+            <div class="tab-pane fade" id="tab4">
+              <!-- Content for Fresh Juices category -->
+            </div>
+            <div class="tab-pane fade" id="tab5">
+              <!-- Content for Boga Cafe category -->
+            </div>
+          </div><!-- /.tab-content -->
+
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.menu layout 5 -->
+
+
+    <!-- ========================
+      page title 
+    =========================== -->
+ <!-- ========================
+      Footer
+    ========================== -->
+
+    <footer id="footer" class="footer footer-layout1 py-5" style="background-color: #000;">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-3">
+            <div class="footer-img pb-3">
+              <a href="index.html">
+                <img class="w-75 footer-logo" src="assets/images/logo white footer.png"alt=""/>
+              </a>
+            </div>
+            <div class="contact-list text-left">
+              <ul class="m-0 p-0">
+                <li>
+                  <span href="">
+                    16 Abbas ElAkkad St.
+                  </span>
+                </li>
+                <li>
+                  <span href="">
+                    Nasr City , Cairo
+                  </span>
+                </li>
+                <li>
+                  <span>Egypt</span>
+                </li>
+                <br>
+                <li>
+                  <span>
+                    Call us : <a href="tel:020101236547"
+                    ><i class="fa fa-fw fa-phone" style="color: #ffffff7f;" aria-hidden="true"></i>02
+                    0101006547</a
+                  >
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    Email : <a href="mailto:BOGA@7oroof.com"
+                    ><i class="fa fa-fw fa-envelope" aria-hidden="true" style="color: #ffffff7f;"></i>
+                    BOGA@boga.com</a
+                  >
+                  </span>
+                </li>
+              </ul>
+              <div class="footer-icons py-3 d-flex justify-content-between">
+                <a class="icon-container" href="#">
+                  <i class="fa fa-facebook-f" aria-hidden="true" style="color: #fff;"></i>
+                </a>
+                <a class="icon-container" href="#">
+                  <i class="fa fa-skype" aria-hidden="true" style="color: #fff;"></i>
+                </a>
+                <a class="icon-container" href="#">
+                  <i class="fa fa-twitter" aria-hidden="true" style="color: #fff;"></i>
+                </a>
+                <a class="icon-container" href="#">
+                  <i class="fa fa-linkedin-square" aria-hidden="true" style="color: #fff;"></i>
+                </a>
+                <a class="icon-container" href="#">
+                  <i class="fa fa-instagram" aria-hidden="true" style="color: #fff;"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-2">
+            <div class="footer-categery">
+              <h6 class="text-white pb-3">
+                Category
+              </h6>
+              <p>
+                Health Food
+              </p>
+              <p>
+                Health Drinks
+              </p>
+              <p>
+                Green Grown
+              </p>
+              <p>
+                Home Recipe
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-2">
+            <div class="footer-brand">
+              <h6 class="text-white pb-3">
+                Brand
+              </h6>
+              <p>
+                Health Food
+              </p>
+              <p>
+                Health Drinks
+              </p>
+              <p>
+                Green Grown
+              </p>
+              <p>
+                Home Recipe
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-2">
+            <div class="footer-customer">
+              <h6 class="text-white pb-3">
+                Customer Service
+              </h6>
+              <p>
+                Help & FAQ
+              </p>
+              <p>
+                Terms of Conditions
+              </p>
+              <p>
+                Privacy Policy
+              </p>
+              <p>
+                Online Returns Policy
+              </p>
+              <p>
+                Shipping & Return 
+              </p>
+              <p>
+                Contact Us
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <div class="footer-customer">
+              <h6 class="text-white pb-3">
+                Newsletter Sign Up
+              </h6>
+              <p>
+                Recieve Our latest updates about our productsand promotions 
+              </p>
+              <div class="footer-input d-flex pb-4">
+                <input type="text" class="form-control" placeholder="Email ...">
+                <button class="footer-btn btn btn-warning text-white w-25">
+                  Subscribe
+                </button>
+              </div>
+              <h5 class="text-white h5">
+                Guarantee Safe & Secure Checout 
+              </h5>
+              <div class="payment d-flex justify-content-around">
+                <div class="">
+                  <img  src="./assets/images/visa.png"  alt="">
+                </div>
+                <div class="">
+                  <img  src="./assets/images/PayPal.png"  alt="">
+                </div>
+                <div class="">
+                  <img  src="./assets/images/masterCard.png"  alt="">
+                </div>
+                <div class="">
+                  <img  src="./assets/images/sage.jpg"  alt="">
+                </div>
+              </div>
+            </div>
+          </div>     
+        </div>
+      </div>
+    </footer>
+
+    
+    <button id="scrollTopBtn"><i class="fa fa-angle-up"></i></button>
+
+
+  </div>
+  <!-- /.wrapper -->
+
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="./assets/js/slick.min.js"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+
+<!-- Mirrored from 7oroof.com/demos/BOGA/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Jun 2023 17:55:53 GMT -->
+
+</html>

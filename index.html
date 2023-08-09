@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from 7oroof.com/demos/BOGA/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Jun 2023 17:53:29 GMT -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="BOGA">
+  <link href="assets/images/new.png" rel="icon">
+  <title>BOGA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/libraries.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/slick-theme.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/Bstyle.css" />
+  <style>
+    @font-face {
+      font-family: 'Handwritten';
+      src: url('assets/fonts/Saithik-Handwritten.ttf') format('truetype');
+    }
+    .layer{
+      background-color: black;
+      opacity: 0.5;
+      z-index: 1;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- =========================
+        Header
+    =========================== -->
+    <header id="header" class="header header-transparent header-layout1">
+      <nav class="navbar navbar-expand-lg sticky-navbar">
+        <div class="container flex-row position-relative">
+          
+          <button class="navbar-toggler" type="button">
+            <span class="menu-lines"><span></span></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNavigation">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav__item with-dropdown">
+                <a href="index.html" class="dropdown-toggle nav__item-link active">Home</a>
+              </li><!-- /.nav-item -->
+
+              <li class="nav__item with-dropdown">
+                <a href="menu-classic.html" class="dropdown-toggle nav__item-link">Menu</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item with-dropdown">
+                <a href="BStory.html" class="dropdown-toggle nav__item-link">Story</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item with-dropdown">
+                <a href="contacts.html" class="dropdown-toggle nav__item-link">Contact</a>
+              </li><!-- /.nav-item -->
+              <li class="nav__item with-dropdown">
+                <a href="cart.html" class="dropdown-toggle nav__item-link">cart</a>
+              </li><!-- /.nav-item -->
+            </ul><!-- /.navbar-nav -->
+            <div class="navbar-actions-wrap mr-5 mb-3">
+              <div class="navbar-actions d-flex align-items-center">
+                
+                <a href="#" class="navbar__action-btn navbar__action-btn-cart">
+                  <i class="fa fa-shopping-cart"></i><span class="cart__label">3</span>
+                </a>
+                <div class="cart-popup">
+                  <ul class="list-unstyled">
+                    <li class="cart-item">
+                      <div class="cart__item-img"><img src="assets/images/shop/grid/1.jpg" alt="thumb"></div>
+                      <div class="cart__item-content">
+                        <h6 class="cart__item-title">Roast Sea Trout</h6>
+                        <div class="cart__item-detail">$ 38.00</div>
+                        <i class="cart__item-delete">&times;</i>
+                      </div><!-- /.cart-item-content -->
+                    </li><!-- /.cart-item -->
+                    <li class="cart-item">
+                      <div class="cart__item-img"><img src="assets/images/shop/grid/3.jpg" alt="thumb"></div>
+                      <div class="cart__item-content">
+                        <h6 class="cart__item-title">Roasted Steak Rou</h6>
+                        <div class="cart__item-detail">$ 29.00</div>
+                        <i class="cart__item-delete">&times;</i>
+                      </div><!-- /.cart-item-content -->
+                    </li><!-- /.cart-item -->
+                  </ul>
+                  <div class="cart-subtotal">
+                    <span>Subtotal:</span>
+                    <span class="color-theme">$67.00</span>
+                  </div><!-- /.cart-subtotal -->
+                  <div class="cart-action d-flex justify-content-center">
+                    <a href="cart.html" class="btn btn__primary btn__hover2">View Cart</a>
+                  </div><!-- /.cart-action -->
+                </div><!-- /.cart-popup -->
+              </div><!-- /.navbar-actions -->
+            </div><!-- /.navbar-actions-wrap -->
+
+          </div><!-- /.navbar-collapse -->
+
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/navlogo.png" class="logo-light" alt="logo">
+          </a>
+        </div><!-- /.container -->
+      </nav><!-- /.navabr -->
+    </header>
+
+
+    <section class="home-slider py-0 overflow-hidden " data-aos="fade-in">
+      <div class="slider-cont">
+        <div class="single-slide position-relative">
+          <div class="layer position-absolute w-100   top-0 bg-black-50"></div>
+          <img src="assets/images/homeS1Min.jpg" alt="" class="homeS1">
+          <div class="text-cont w-100">
+            <div class="container  h-100">
+              <div class="row align-items-center header-text h-100 ">
+                <h2
+                  class="animate__animated" 
+                  data-animation-in="animate__fadeInDown">
+                  Recipes <br> Made in  <br> House 
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="single-slide position-relative">
+          <div class="layer position-absolute w-100  h-100 "></div>
+          <img src="assets/images/homeSlider1.jpg" class="img-fluid" alt="">
+          <div class="text-cont w-100">
+            <div class="container   h-100">
+              <div class="row h-100 align-items-center header-text">
+                  <h2 class="text-center animate__animated w-100"
+                      data-animation-in="animate__fadeInRight"
+                  >Greens Grown  <br> in House</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="single-slide position-relative">
+          <div class="layer position-absolute w-100  top-0 bg-black-50"></div>
+          <img src="assets/images/homemamade-slider/1Min.jpg" class="img-fluid" alt="">
+          <div class="text-cont w-100">
+            <div class="container  h-100">
+              <div class="row h-100 align-items-center header-text">
+                <h2 
+                class="animate__animated w-100 text-right" 
+                  data-animation-in="animate__fadeInUp"
+                >Drinks Bottled <br> in House</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+    
+    <footer id="footer" class="footer footer-layout1 py-5" style="background-color: #000;">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-3">
+            <div class="footer-img pb-3">
+              <a href="index.html">
+                <img class="w-75 footer-logo" src="assets/images/logo white footer.png"alt=""/>
+              </a>
+            </div>
+            <div class="contact-list text-left">
+              <ul class="m-0 p-0">
+                <li>
+                  <span href="">
+                    16 Abbas ElAkkad St.
+                  </span>
+                </li>
+                <li>
+                  <span href="">
+                    Nasr City , Cairo
+                  </span>
+                </li>
+                <li>
+                  <span>Egypt</span>
+                </li>
+                <br>
+                <li>
+                  <span>
+                    Call us : <a href="tel:020101236547"
+                    ><i class="fa fa-fw fa-phone" style="color: #ffffff7f;" aria-hidden="true"></i>02
+                    0101006547</a
+                  >
+                  </span>
+                </li>
+                <li>
+                  <span>
+                    Email : <a href="mailto:BOGA@7oroof.com"
+                    ><i class="fa fa-fw fa-envelope" aria-hidden="true" style="color: #ffffff7f;"></i>
+                    BOGA@boga.com</a
+                  >
+                  </span>
+                </li>
+              </ul>
+              <div class="footer-icons py-3 d-flex justify-content-between">
+                <a class="icon-container" href="#">
+                  <i class="fa fa-facebook-f" aria-hidden="true" style="color: #fff;"></i>
+                </a>
+                <a class="icon-container" href="#">
+                  <i class="fa fa-skype" aria-hidden="true" style="color: #fff;"></i>
+                </a>
+                <a class="icon-container" href="#">
+                  <i class="fa fa-twitter" aria-hidden="true" style="color: #fff;"></i>
+                </a>
+                <a class="icon-container" href="#">
+                  <i class="fa fa-linkedin-square" aria-hidden="true" style="color: #fff;"></i>
+                </a>
+                <a class="icon-container" href="#">
+                  <i class="fa fa-instagram" aria-hidden="true" style="color: #fff;"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-2">
+            <div class="footer-categery">
+              <h6 class="text-white pb-3">
+                Category
+              </h6>
+              <p>
+                Health Food
+              </p>
+              <p>
+                Health Drinks
+              </p>
+              <p>
+                Green Grown
+              </p>
+              <p>
+                Home Recipe
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-2">
+            <div class="footer-brand">
+              <h6 class="text-white pb-3">
+                Brand
+              </h6>
+              <p>
+                Health Food
+              </p>
+              <p>
+                Health Drinks
+              </p>
+              <p>
+                Green Grown
+              </p>
+              <p>
+                Home Recipe
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-2">
+            <div class="footer-customer">
+              <h6 class="text-white pb-3">
+                Customer Service
+              </h6>
+              <p>
+                Help & FAQ
+              </p>
+              <p>
+                Terms of Conditions
+              </p>
+              <p>
+                Privacy Policy
+              </p>
+              <p>
+                Online Returns Policy
+              </p>
+              <p>
+                Shipping & Return 
+              </p>
+              <p>
+                Contact Us
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-3">
+            <div class="footer-customer">
+              <h6 class="text-white pb-3">
+                Newsletter Sign Up
+              </h6>
+              <p>
+                Recieve Our latest updates about our productsand promotions 
+              </p>
+              <div class="footer-input d-flex pb-4">
+                <input type="text" class="form-control" placeholder="Email ...">
+                <button class="footer-btn btn btn-warning text-white w-25">
+                  Subscribe
+                </button>
+              </div>
+              <h5 class="text-white h5">
+                Guarantee Safe & Secure Checout 
+              </h5>
+              <div class="payment d-flex justify-content-around">
+                <div class="">
+                  <img  src="./assets/images/visa.png"  alt="">
+                </div>
+                <div class="">
+                  <img  src="./assets/images/PayPal.png"  alt="">
+                </div>
+                <div class="">
+                  <img  src="./assets/images/masterCard.png"  alt="">
+                </div>
+                <div class="">
+                  <img  src="./assets/images/sage.jpg"  alt="">
+                </div>
+              </div>
+            </div>
+          </div>     
+        </div>
+      </div>
+    </footer>
+
+    
+  
+
+    <button id="scrollTopBtn"><i class="fa fa-angle-up"></i></button>
+
+
+  </div>
+  <!-- /.wrapper -->
+  
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="./assets/js/slick-animation.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+
+<!-- Mirrored from 7oroof.com/demos/BOGA/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 18 Jun 2023 17:55:53 GMT -->
+
+</html>
