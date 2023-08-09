@@ -323,7 +323,7 @@ a{
     font-size: 20px;
   }
   .fancybox-content img {
-    height: 200px;
+    height: 250px;
 }
 }
 /*******************************End fourth section*******************/
@@ -411,7 +411,13 @@ a{
   bottom: -1px;
   z-index: 112;
 }
+.bottles{
+  height: 200px;
+}
 @media screen and (max-width: 600px) {
+  .bottles{
+  height: 200px;
+}
   .fancy-box3 {
     padding-top: 0px;
     padding-bottom: 0px;
