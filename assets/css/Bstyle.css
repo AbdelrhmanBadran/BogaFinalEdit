@@ -72,7 +72,7 @@ a{
   .home-slider .single-slide .text-cont h2 {
     /* font-size: 35px !important; */
     font-weight: 400;
-    text-align: center;
+    text-align: left;
   }
   
   .home-slider .slick-prev {
