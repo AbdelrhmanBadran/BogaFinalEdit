@@ -299,9 +299,9 @@ a{
   font-weight: 500;
 }
 
-.fancybox-content img{
+/* .fancybox-content img{
   height: 400px;
-}
+} */
 @media screen and (max-width: 600px) {
   .fancybox-layout1 .container {
     padding-top: 50px;
@@ -323,7 +323,7 @@ a{
     font-size: 20px;
   }
   .fancybox-content img {
-    height: 300px;
+    height: 200px;
 }
 }
 /*******************************End fourth section*******************/
@@ -411,18 +411,15 @@ a{
   bottom: -1px;
   z-index: 112;
 }
-.bottles{
-  height: 200px;
-}
+
 @media screen and (max-width: 600px) {
-  .bottles{
-  height: 200px;
-}
   .fancy-box3 {
     padding-top: 0px;
     padding-bottom: 0px;
   }
-
+  .bottles{
+    height: 200px;
+  }
   .layout-3-img {
     width: 100% !important;
   }
@@ -1132,6 +1129,7 @@ a{
   height: 100px;
   background-color: #f8f3f3;
   cursor: pointer;
+  padding: 15px;
 }
 .border-logo{
   border: 5px solid #28a745;
@@ -1184,11 +1182,24 @@ a{
 
 }
 .noon{
-  padding-inline: 20px;
+  padding-inline: 5px;
+}
+.logo-container p{
+  font-size: 15px;
+  line-height: 5px;
+  color: #28a745;
+  margin-top: 5px;
+  font-weight: 500;
+}
+.noon-p{
+  margin-top: 20px !important;
 }
 @media screen and (max-width : 600px){
-  .heading-title span {
-    font-size: 28px !important;
+  .heading-title .badge {
+    font-size: 28px ;
+  }
+  .delivery-cost{
+    font-size: 5px !important;
   }
   .checkout .card h5{
     font-size: 20px;
@@ -1203,6 +1214,7 @@ a{
   .logo-container {
     width: 50px;
     height: 50px;
+    padding: 5px;
   }
   .cost p , .cost p span{
     font-size: 15px !important;
@@ -1210,8 +1222,33 @@ a{
   .total p , .total p span {
     font-size: 20px !important;
   }
-  .noon{
-    padding-inline: 7px;
+  .noon , .talabat{
+    padding-inline: 2px;
+    padding-top: 12px;
+  }
+  .border-logo{
+    border: 3px solid #28a745;
+  }
+  .logo-container p{
+    font-size: 10px;
+    line-height: 5px;
+    color: #28a745;
+    margin-top: 5px;
+  }
+  .noon-p{
+    margin-top: 5px !important;
+  }
+  .easy{
+    margin-top: 3px;
+    transform: scale(0.9);
+  }
+  .easy-p{
+    margin-top: -5px !important;
+  }
+}
+@media screen and (min-width : 600px ) and (max-width : 767px){
+  .logo-container p{
+    font-size: 12px !important;
   }
 }
 /*?==============================Checkout=====================*/
@@ -1238,28 +1275,22 @@ a{
 .footer-icons .icon-container i{
   font-size: 15px;
 }
-.footer-input input{
-  border-radius: 0;
-  background-color: #ffffff7f;
-  border-color: #ffffff7f;
+.store-word{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-right: 15px;
+  font-size: 20px;
+  transform: scaleY(1.5);
 }
-.footer-btn{
-  min-width: 80px;
-  font-weight: 600;
-  font-size: 12px;
-  margin-left: 5px;
-  background-color: orange;
-  border-radius: 0;
-  padding: 0 5px;
+.footer h3{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  transform: scaleY(1.5);
 }
-.payment div img{
-  width: 60px;
-  height: 40px;
-  border-radius: 5px;
+.menu-img{
+  border-radius: 1rem;
 }
 @media screen and (max-width: 600px) {
-  .contact-list a,
-  span {
+  .contact-list a,.contact-list span 
+  {
     font-size: 13px !important;
   }
   .contact-list i {
@@ -1268,44 +1299,9 @@ a{
   .contact-list ul {
     padding: 0;
   }
-  .footer-logo {
-    width: 120px !important;
-    height: 50px !important;
+  .copy{
+    font-size: 20px;
   }
 }
 /*!==================================End Footer section******************/
 
-/*
-<div class="col-6">
-              <div class="contact-list text-left">
-                <ul>
-                  <li>
-                    <a href="tel:020101236547"
-                      ><i class="fa fa-fw fa-phone" aria-hidden="true"></i>02
-                      0101006547</a
-                    >
-                  </li>
-                  <li>
-                    <a href="mailto:BOGA@7oroof.com"
-                      ><i class="fa fa-fw fa-envelope" aria-hidden="true"></i>
-                      BOGA@boga.com</a
-                    >
-                  </li>
-                  <li>
-                    <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>
-                    <span>some locatioon</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="footer-img ml-auto">
-                <a href=""
-                  ><img
-                    class="w-50 footer-logo"
-                    src="assets/images/logo white footer.png"
-                    alt=""
-                /></a>
-              </div>
-            </div>
-*/
