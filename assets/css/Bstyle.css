@@ -1286,6 +1286,9 @@ a{
 .menu-img{
   border-radius: 1rem;
 }
+.copy{
+  font-size: 15px;
+}
 @media screen and (max-width: 600px) {
   .contact-list a,.contact-list span 
   {
@@ -1298,7 +1301,7 @@ a{
     padding: 0;
   }
   .copy{
-    font-size: 20px;
+    font-size: 10px;
   }
 }
 /*!==================================End Footer section******************/
