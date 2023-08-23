@@ -122,8 +122,8 @@ $(function () {
       .parent()
       .css({
         "background-image": "url(" + imgSrc + ")",
-        "background-size": "100% 100%",
-        "background-position": "left bottom  ",
+        "background-size": "cover",
+        "background-position": "center  ",
         "background-repeat": "no-repeat",
       });
     $(this).parent().addClass("bg-img");
