@@ -340,7 +340,8 @@ a{
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: #000000aa;
+  background-color: #000;
+  opacity: 0.2;
   top: 0;
   left: 0;
 }
@@ -416,7 +417,7 @@ a{
     padding-bottom: 0px;
   }
   .bottles{
-    height: 200px;
+    height: 300px;
   }
   .layout-3-img {
     width: 100% !important;
@@ -708,6 +709,13 @@ a{
   transition: 1s all;
   /* background-color: yellowgreen; */
 }
+.fact-text-container{
+  border: 1px solid #28a745;
+  padding-top: 5px;
+  padding-bottom: 0px ;
+  padding-inline: 5px;
+  border-radius: 5px;
+}
 .fact-text{
   font-size: 20px;
   padding-top: 5px;
@@ -726,10 +734,7 @@ a{
   left: 50%;
   transform: translateX(-50%);
 }
-.kcal img{
-  transform: scale(0.8);
-  padding-bottom: 5px;
-}
+
 .nourish1 {
   height: 60px;
 }
@@ -1192,6 +1197,22 @@ a{
 .noon-p{
   margin-top: 20px !important;
 }
+.easy{
+  /* margin-top: 3px; */
+  transform: scale(0.7);
+}
+.easy-p{
+  margin-top: -5px !important;
+}
+.cari-p{
+  margin-top: 14px !important;
+}
+.talabat-p{
+  padding-top: 10px;
+}
+.talabat{
+  padding-top: 12px;
+}
 @media screen and (max-width : 600px){
   .heading-title .badge {
     font-size: 28px ;
@@ -1220,9 +1241,15 @@ a{
   .total p , .total p span {
     font-size: 20px !important;
   }
-  .noon , .talabat{
+  .noon{
     padding-inline: 2px;
     padding-top: 12px;
+    transform: scale(0.6);
+  }
+  .talabat{
+    padding-inline: 2px;
+    padding-top: 12px;
+    transform: scale(0.8);
   }
   .border-logo{
     border: 3px solid #28a745;
@@ -1238,10 +1265,17 @@ a{
   }
   .easy{
     margin-top: 3px;
-    transform: scale(0.9);
+    transform: scale(0.5);
   }
   .easy-p{
-    margin-top: -5px !important;
+    margin-bottom: 19px !important;
+  }
+  .cari-p{
+    margin-top: 5px !important;
+    margin-bottom: -5px;
+  }
+  .talabat-p{
+    padding-top: 10px;
   }
 }
 @media screen and (min-width : 600px ) and (max-width : 767px){
@@ -1287,7 +1321,7 @@ a{
   border-radius: 1rem;
 }
 .copy{
-  font-size: 15px;
+  font-size: 20px;
 }
 @media screen and (max-width: 600px) {
   .contact-list a,.contact-list span 
@@ -1301,7 +1335,7 @@ a{
     padding: 0;
   }
   .copy{
-    font-size: 10px;
+    font-size: 15px;
   }
 }
 /*!==================================End Footer section******************/
