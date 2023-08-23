@@ -286,6 +286,8 @@ $(document).ready(function () {
   }
 });
 
+
+
 $("[data-toggle='tab']").click(function(){
   $('.slick-slider').slick('refresh');
   });
@@ -298,7 +300,9 @@ $("[data-toggle='tab']").click(function(){
   $('.slick-slider').slick('refresh');
   });
 
+  let logos = document.getElementsByClassName('logo-container')
 
+  logos[0].classList.add('border-logo')
   
   $('.logo-container').click(function () {
   $(this).addClass('border-logo')
