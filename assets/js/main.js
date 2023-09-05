@@ -324,13 +324,13 @@ $(this).parent().siblings().children().removeClass('border-nourish')
 
 
   
-$('.tabs-container').height($('.tab-content').height() + 50);
+$('.tabs-container').height($('.tab-content').height() + 150);
 
 
 
 
 $('.tab-label').click(function() {
-  let h = $(this).next().height() + $(this).height() + 45 ;
+  let h = $(this).next().height() + $(this).height() + 95 ;
   ($(this).parent().parent().parent().height(h));
 })
 
