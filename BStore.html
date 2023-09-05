@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="Babette">
+  <link href="assets/images/new.png" rel="icon">
+  <title>BOGA</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Rubik:400,500,700%7cShadows+Into+Light&display=swap">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <link rel="stylesheet" href="assets/css/slick-theme.css">  
+  <link rel="stylesheet" href="assets/css/libraries.css" />
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/Bstyle.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+  <header id="header" class="header header-transparent header-layout1">
+    <nav class="navbar navbar-expand-lg sticky-navbar">
+      <div class="container flex-row position-relative">
+        
+        <button class="navbar-toggler" type="button">
+          <span class="menu-lines"><span></span></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavigation">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav__item with-dropdown">
+              <a href="index.html" class="dropdown-toggle nav__item-link ">Home</a>
+            </li><!-- /.nav-item -->
+
+            <li class="nav__item with-dropdown">
+              <a href="menu-classic.html" class="dropdown-toggle nav__item-link">Menu</a>
+            </li><!-- /.nav-item -->
+            <li class="nav__item with-dropdown">
+              <a href="BStory.html" class="dropdown-toggle nav__item-link ">Story</a>
+            </li><!-- /.nav-item -->
+            <li class="nav__item with-dropdown">
+              <a href="contacts.html" class="dropdown-toggle nav__item-link">Contact</a>
+            </li><!-- /.nav-item -->
+            <li class="nav__item with-dropdown">
+              <a href="cart.html" class="dropdown-toggle nav__item-link">cart</a>
+            </li><!-- /.nav-item -->
+            
+            <li class="nav__item with-dropdown">
+              <a href="BStore.html" class="dropdown-toggle nav__item-link active">Store</a>
+            </li><!-- /.nav-item -->
+          </ul><!-- /.navbar-nav -->
+          <div class="navbar-actions-wrap mr-5 mb-3">
+            <div class="navbar-actions d-flex align-items-center">
+              
+              <a href="#" class="navbar__action-btn navbar__action-btn-cart">
+                <i class="fa fa-shopping-cart"></i><span class="cart__label">3</span>
+              </a>
+              <div class="cart-popup">
+                <ul class="list-unstyled">
+                  <li class="cart-item">
+                    <div class="cart__item-img"><img src="assets/images/shop/grid/1.jpg" alt="thumb"></div>
+                    <div class="cart__item-content">
+                      <h6 class="cart__item-title">Roast Sea Trout</h6>
+                      <div class="cart__item-detail">$ 38.00</div>
+                      <i class="cart__item-delete">&times;</i>
+                    </div><!-- /.cart-item-content -->
+                  </li><!-- /.cart-item -->
+                  <li class="cart-item">
+                    <div class="cart__item-img"><img src="assets/images/shop/grid/3.jpg" alt="thumb"></div>
+                    <div class="cart__item-content">
+                      <h6 class="cart__item-title">Roasted Steak Rou</h6>
+                      <div class="cart__item-detail">$ 29.00</div>
+                      <i class="cart__item-delete">&times;</i>
+                    </div><!-- /.cart-item-content -->
+                  </li><!-- /.cart-item -->
+                </ul>
+                <div class="cart-subtotal">
+                  <span>Subtotal:</span>
+                  <span class="color-theme">$67.00</span>
+                </div><!-- /.cart-subtotal -->
+                <div class="cart-action d-flex justify-content-center">
+                  <a href="cart.html" class="btn btn__primary btn__hover2">View Cart</a>
+                </div><!-- /.cart-action -->
+              </div><!-- /.cart-popup -->
+            </div><!-- /.navbar-actions -->
+          </div><!-- /.navbar-actions-wrap -->
+
+        </div><!-- /.navbar-collapse -->
+
+        <a class="navbar-brand" href="#">
+          <img src="assets/images/navlogo.png" class="logo-light" alt="logo">
+        </a>
+      </div><!-- /.container -->
+    </nav><!-- /.navabr -->
+  </header>
+
+<section class="filter">
+  <h5 class="px-5 text-center">
+    30 CUP READY-POUR™ 5-STAGE WATER 
+    FILTER DISPENSER + 2 PACK SUBSCRIPTION
+  </h5>
+  <ul class="slides">
+    <input type="radio" name="radio-btn" id="img-1" checked />
+    <li class="slide-container">
+		<div class="slide">
+			<img src="./assets/images/filter1.png" />
+        </div>
+      
+		<div class="nav">
+			<label for="img-3" class="prev">&#x2039;</label>
+			<label for="img-2" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-2" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src="./assets/images/filter3.png" />
+        </div>
+		<div class="nav">
+			<label for="img-1" class="prev">&#x2039;</label>
+			<label for="img-3" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-3" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src="./assets/images/filter2.png" />
+        </div>
+		<div class="nav">
+			<label for="img-2" class="prev">&#x2039;</label>
+			<label for="img-4" class="next">&#x203a;</label>
+		</div>
+    </li>
+    <input type="radio" name="radio-btn" id="img-4" />
+    <li class="slide-container">
+        <div class="slide">
+          <img src="./assets/images/filter4.png" />
+        </div>
+		<div class="nav">
+			<label for="img-3" class="prev">&#x2039;</label>
+			<label for="img-1" class="next">&#x203a;</label>
+		</div>
+    </li>
+
+    <li class="nav-dots">
+      <label for="img-1" class="nav-dot" id="img-dot-1">
+        <img src="./assets/images/filterDetails.png" class="w-100 h-100"/>
+      </label>
+      <label for="img-2" class="nav-dot" id="img-dot-2">
+        <img src="./assets/images/filter3.png" class="w-100 h-100"/>
+      </label>
+      <label for="img-3" class="nav-dot" id="img-dot-3">
+        <img src="./assets/images/filter2.png" class="w-100 h-100"/>
+      </label>
+      <label for="img-4" class="nav-dot" id="img-dot-4">
+        <img src="./assets/images/filter4.png" class="w-100 h-100"/>
+      </label>
+      </li>
+</ul>
+</section>
+
+  <section class="tabs-container p-0">
+    <div class="tabs d-flex justify-content-center">
+        <div class="tab ">
+          <input type="radio" name="css-tabs" id="tab-1" checked class="tab-switch">
+          <label for="tab-1" class="tab-label text-capitalize">Overview</label>
+          <div class="tab-content">
+            <div class="w-75 mx-auto">
+              <h2>
+                THE SCIENCE OF PUREST TASTING WATER
+              </h2>
+              <p>
+              We offer drinking water filters that remove 99.6% of 
+              total dissolved solids and prove it by putting the 
+              science into our customers' hands. So, when the 
+              included TDS meter shows triple zeros, you can 
+              feel confident our 5-stage water filter did its job. 
+              And that virtually all dissolved solids, or TDS*, 
+              have been removed.  
+              <br>
+              <br>
+              The 5 gallon water cooler 5-stage filtration system is 
+              the perfect addition for any home or office, saving 
+              money, storage space and heavy lifting.
+              The refillable bottle fits most top loading 
+              coolers to dispense hot or cold filtered water.
+              <br>
+              <br>
+              The 22 Cup Ready-Read 5-stage Water Filtration Pitcher is perfect for 
+              in home or small office usage and holds more than enough water for 
+              your family and friends. Get peace of mind knowing you're always 
+              getting the purest tasting water with the new integrated TDS meter. 
+              This upgraded model with Ready-Read Technology gives an instant 
+              TDS readout of water as it passes through the device's body. The 
+              premium 5-stage water filtration removes virtually all dissolved 
+              solids from your tap water- more than any other leading brand! 
+              See for vourself bv detaching the meter and reading TDS levels 
+              before and after filtering vour tap water. Zero Water's 5-stage 
+              filtration is the only pour-through filter NSF certified to reduce lead, 
+              chromium & PFOA/PFOS.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="tab">
+          <input type="radio" name="css-tabs" id="tab-2" class="tab-switch">
+          <label for="tab-2" class="tab-label">Benefits</label>
+          <div class="tab-content">
+            <div class="w-75 mx-auto">
+              <h2>
+                What is TDS?
+              </h2>
+              Total Dissolved Solids ("TDS") are organic and inorganic materials, 
+              such as metals, minerals, salts, and ions dissolved in water. 
+              TDS can affect the taste and appearance of water.
+              Dissolved solids enter your water supply from a 
+              wide range of sources - old piping, run-off from 
+              road salts, pesticides, fertilizers, and other sources.
+            </div>
+          </div>
+        </div>
+        <div class="tab">
+          <input type="radio" name="css-tabs" id="tab-3" class="tab-switch">
+          <label for="tab-3" class="tab-label">Specifications</label>
+          <div class="tab-content">
+            <div class="w-75 mx-auto">
+              <div class="spec-slider">
+                <div class="d-flex justify-content-center align-items-center">
+                  
+                  <table border="1" class="spec-table h-100">
+                    <tr class="w-100">
+                      <td class="table-green border-1">CAPACITY</td>
+                      <td class="border-1">5 Gallons</td>
+                    </tr>
+                    
+                    <tr>
+                      <td class="table-green border-1">COLOR</td>
+                      <td class="border-1">Blue & White</td>
+                    </tr>
+                    
+                    <tr>
+                      <td class="table-green border-1">WEIGHT</td>
+                      <td class="border-1">6 Pound</td>
+                    </tr>
+                    
+                    <tr>
+                      <td class="text-uppercase table-green border-1">Dimensions</td>
+                      <td class="border-1">13.82 x 11.65 x 11.65 inches</td>
+                    </tr>
+                    
+                    <tr>
+                      <td class="table-green border-1">MATERIAL</td>
+                      <td class="border-1">Plastic</td>
+                    </tr>
+                    
+                    <tr>
+                      <td class="table-green text-uppercase border-1">
+                        Purification
+                        <br>
+                        Method
+                      </td>
+                      <td class="border-1">ZeroWater 5-Stage 
+                        <br>
+                        lon Exchange Filtration</td>
+                    </tr>
+                    
+                    <tr>
+                      <td class="table-green text-uppercase border-1">MODEL NUMBER</td>
+                      <td>ZJ-004S</td>
+                    </tr>
+                    
+                    <tr>
+                      <td class="table-green border-1" >UPC</td>
+                      <td class="border-1">851510006552</td>
+                    </tr>
+                  </table>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <img src="./assets/images/Filter.png" class="w-50 filterImg"  alt="Filter-Image">
+                </div>
+                <div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div>
+                          <img src="./assets/images/nsf.png" class="w-100 nsfImage" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-9">
+                        <div class="nsf-text">
+                          <h3 class="h1">
+                          <span class="table-green">NSF CERTIFIED TO REDUCE</span>
+                          PFAS AND LEAD
+                          </h3>
+                          <p>
+                            The 5-stage Ion Exchange water filtration is 
+                            NSF Certified to reduce PFOA/PFOS, Lead & 
+                            Chromium. Get peace of mind knowing you
+                            have the purest-tasting water in your home 
+                            with fewer contaminants. *Certified to NSF/ANSI 
+                            standards 42 and 53, issued 5/7/2021.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="footer footer-layout1 py-5" style="background-color: #000;">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <div class="footer-img ">
+            <a href="index.html" class="d-block w-100 pb-4">
+              <img class="w-75 footer-logo" src="assets/images/logo white footer.png"alt=""/>
+            </a>
+            <p class="text-white pt-3 store-word">
+              Everyday, Including Our Fresh Bread , Sauces, Dressings , Jams And Creams Cheese
+            </p>
+          </div>
+          <div class="contact-list text-left py-3">
+            <div class="footer-icons py-3 d-flex justify-content-start">
+              <a class="icon-container" href="#">
+                <i class="fa fa-facebook-f" aria-hidden="true" style="color: #fff;"></i>
+              </a>
+              <a class="icon-container" href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 448 512"
+                >
+                  <style>
+                    svg {
+                      fill: #fff;
+                    }
+                  </style>
+                  <path
+                    d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"
+                  />
+                </svg>
+              </a>
+              <a class="icon-container" href="#">
+                <i class="fa fa-instagram" aria-hidden="true" style="color: #fff;"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-8">
+          <div class="footer-categery text-center">
+            <h3 class="text-white text-center pb-3">
+              Our Branches
+            </h3>
+            <div class="row row-gap30">
+              <div class="col-sm-12 col-md-6">
+                <ul class="m-0 p-0 text-center">
+                  <li>
+                    <h6 class="text-white pb-1">
+                      branch no.1
+                    </h6>
+                  </li>
+                  <li>
+                    <span>
+                      Address :<i class="fa fa-fw fa-map-marker" style="color: #ffffff7f;"
+                      aria-hidden="true"></i>Giza , lorem st.
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      Call us : <a href="tel:020101236547"
+                      ><i class="fa fa-fw fa-phone" style="color: #ffffff7f;" aria-hidden="true"></i>02
+                      0101006547</a
+                    >
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-12 col-md-6 ">
+                <ul class="m-0 p-0 text-center ">
+                  <li>
+                    <h6 class="text-white pb-1">
+                      branch no.2
+                    </h6>
+                  </li>
+                  <li>
+                    <span>
+                      Address :<i class="fa fa-fw fa-map-marker" style="color: #ffffff7f;"
+                      aria-hidden="true"></i>Dokki , lorem st.
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      Call us : <a href="tel:020101236547"
+                      ><i class="fa fa-fw fa-phone" style="color: #ffffff7f;" aria-hidden="true"></i>02
+                      0101006547</a
+                    >
+                    </span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-sm-12 col-md-6 pb-5">
+                <ul class="m-0 p-0 text-center">
+                  <li>
+                    <h6 class="text-white pb-1">
+                      branch no.3
+                    </h6>
+                  </li>
+                  <li>
+                    <span>
+                      Address :<i class="fa fa-fw fa-map-marker" style="color: #ffffff7f;"
+                      aria-hidden="true"></i>Maadi,lorem st.
+                    </span>
+                  </li>
+                  <li>
+                    <span>
+                      Call us : <a href="tel:020101236547"
+                      ><i class="fa fa-fw fa-phone" style="color: #ffffff7f;" aria-hidden="true"></i>02
+                      0101006547</a
+                    >
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+<!--           
+        <div class="col-sm-12 col-md-4">
+          <div class="footer-customer text-center">
+            <h3 class="text-white pb-3 ">
+              Our Favorite Dishes 
+            </h3>
+            <div class="row g-2">
+              <div class="col-md-4">
+                <div class="p-1">
+                <img src="./assets/images/plate1.png" class="w-100 rounded-4 menu-img" alt="">
+                </div>
+              </div>
+              <div class="col-md-8">
+                <h5 class="text-left main-color ">
+                  Apple Quiona
+                </h5>
+                <p class="p-0  text-left">
+                  Lorem ipsum dolor sit amet.
+                </p>
+                <p class="text-left">
+                  AED 20
+                </p>
+              </div>
+              <div class="col-md-4">
+                <div class="p-1">
+                <img src="./assets/images/plate2.png" class="w-100 rounded-4 menu-img" alt="">
+                </div>
+              </div>
+              <div class="col-md-8">
+                <h5 class="text-left main-color ">
+                  Very Berry
+                </h5>
+                <p class="p-0  text-left">
+                  Lorem ipsum dolor sit amet.
+                </p>
+                <p class="text-left">
+                  AED 20
+                </p>
+              </div>
+            </div>
+            
+          </div>
+        </div> -->
+        <div class="col-12 mt-20">
+          <h4 class="text-center main-color copy" >
+              &copycopyright by Boga 2023
+          </h4>
+        </div>
+          
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="assets/js/jquery-3.3.1.min.js"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/slick.min.js"></script>
+  <!--*========shipping cost===========  -->
+  <!-- <script src="assets/js/cart.js"></script> -->
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+
+</body>
+</html>
