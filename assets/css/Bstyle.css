@@ -1624,7 +1624,7 @@ input#img-4:checked ~ .nav-dots label#img-dot-4
     height: 50px;
     padding: 0px;
   }
-    .tab-label{
+  .tabs-container  .tab-label{
     font-size: 12px;
     font-weight: bold !important;
   }
@@ -1650,7 +1650,8 @@ input#img-4:checked ~ .nav-dots label#img-dot-4
     font-size:12px ;
     padding: 5px 15px;
   }
-  .tab-content{
+  
+  .tabs-container .tab-content{
     padding: 20px 0;
   }
   .filter h5{
