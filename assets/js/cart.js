@@ -22,22 +22,22 @@ let eleArray = Array.from(logos);
     ele.addEventListener('click' , ()=>{
 
       if (eleArray.indexOf(ele) == 0) {
-        document.getElementById('shippingCost').innerHTML = 20;
-        shippingCost = 20;
+        document.getElementById('shippingCost').innerHTML = 0;
+        shippingCost = 0;
         calcTatal();
       }
       else if (eleArray.indexOf(ele) == 1) {
-        document.getElementById('shippingCost').innerHTML = 50;
-        shippingCost = 50;
+        document.getElementById('shippingCost').innerHTML = 30;
+        shippingCost = 30;
         calcTatal();
       }
       else if (eleArray.indexOf(ele) == 2) {
-        document.getElementById('shippingCost').innerHTML = 40;
-        shippingCost = 40;
+        document.getElementById('shippingCost').innerHTML = 35;
+        shippingCost = 35;
         calcTatal();
       }
       else if (eleArray.indexOf(ele) == 3) {
-        document.getElementById('shippingCost').innerHTML = 30;
+        document.getElementById('shippingCost').innerHTML = 20;
         shippingCost = 30;
         calcTatal();
       }
@@ -58,3 +58,9 @@ let eleArray = Array.from(logos);
 function calcTatal(){
   document.getElementById('total').innerHTML = subTotal + shippingCost + vatTax
 }
+
+
+$('.logo-container').click(function () {
+  $(this).addClass('border-logo')
+  $(this).siblings().removeClass('border-logo')
+})
