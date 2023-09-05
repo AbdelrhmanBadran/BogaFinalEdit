@@ -317,7 +317,7 @@ a{
     font-size: 1.3rem;
     color: white;
     font-weight: 300;
-    padding-top: 50px;
+    padding-top: 0px;
   }
   .layout-3-p {
     font-size: 20px;
@@ -744,7 +744,16 @@ a{
 .nourish3 {
   height: 80px;
 }
-
+.nourish-link{
+  padding-bottom: 0px;
+  /* border-radius: 5px; */
+  border: none;
+  transition: 0.5s all;
+}
+.border-nourish{
+  padding-bottom: 5px;
+  border-bottom: 5px solid #28a745;
+}
 /*?==============================facts=====================*/
 .facts{
   padding: 20px 0;
@@ -1340,3 +1349,327 @@ a{
 }
 /*!==================================End Footer section******************/
 
+.form-border .form-control{
+  background-color: transparent;
+}
+
+
+/******************************************************/
+
+.tabs {
+  position: relative;
+  margin:  0;
+}
+
+.tab {
+  width: 33.33%;
+  /* float: left; */
+}
+.tab-switch {
+  display: none;
+}
+.tab-label {
+  position: relative;
+  display: block;
+  padding: 1.5rem 1.618em;
+  cursor: pointer;
+  top: 0;
+  text-align: center;
+  color: #269653;
+  font-family: 'Comfortaa', cursive;
+  font-weight: lighter !important;
+  font-size: 30px;
+  margin: 0;
+  background-color: #0000000d;
+  border-bottom: 0.125rem solid transparent;
+  transition: all 0.5s;
+
+}
+.tab-label:hover {
+  border-bottom: 0.125rem solid #28a745;
+}
+.tab-content {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.5s;
+  background-color: #0000000d;
+  color: #000;
+  margin: 0;
+  font-weight: 400;
+  font-size:18px;
+  font-family: 'Comfortaa', cursive;
+  padding-top: 20px ;
+  padding-bottom: 30px;
+}
+.tab-content h2{
+  color: #269653;
+  font-weight: 300;
+
+}
+.tab-switch:checked + .tab-label {
+  transition: all 0.35s;
+  z-index: 1;
+}
+.tab-switch:checked +  .tab-label{
+  border-bottom: 0.125rem solid #28a745;
+}
+.tab-switch:checked + label + .tab-content {
+  z-index: 2;
+  opacity: 1;
+  transition: all 0.35s;
+}
+
+
+
+.spec-slider .slick-dots li button{
+  background-color: rgb(118, 111, 111) !important;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.spec-slider .slick-dots li.slick-active button:before{
+  background-color: rgb(0, 0, 0)!important;
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.spec-slider .slick-dots{
+  margin-bottom: -5px !important;
+}
+.spec-table{
+  border-color: #269653;
+}
+.spec-table td{
+  padding: 10px 20px;
+  border-color: #269653;
+}
+.table-green{
+  color:#269653;
+}
+.filterImg{
+  height: 400px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+/* html, body { background: #333 url("https://codepen.io/images/classy_fabric.png"); } */
+
+.slides {
+    padding: 0;
+    width: 609px;
+    height: 420px;
+    display: block;
+    margin: 30px auto;
+    position: relative;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 609px;
+    height: 420px;
+    display: block;
+    position: absolute;
+    transform: translate(1,0);
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {
+  width: 40px;
+  height: 100%;
+  display: none;
+  position: absolute;
+  opacity: 1;
+  z-index: 9;
+  cursor: pointer;
+  color: #269653;
+  font-size: 80pt;
+  line-height: 380px;
+}
+
+
+
+.nav .next { right: -100px; }
+.nav .prev { left: -100px; }
+
+input:checked + .slide-container  .slide {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+	width: 100%;
+	bottom: 0px;
+	height: 50px;
+  transform: translateY(150%);
+	display: block;
+	position: absolute;
+	text-align: center;
+}
+
+.nav-dots .nav-dot {
+	top: -5px;
+	width: 100px;
+	height: 100px;
+	margin: 0 4px;
+	position: relative;
+	display: inline-block;
+	/* background-color: rgba(0, 0, 0, 0.6); */
+  padding: 10px;
+  border: 1px #279654 solid
+}
+
+.nav-dots .nav-dot:hover {
+	cursor: pointer;
+	/* background-color: rgba(0, 0, 0, 0.8); */
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4
+{
+  border: 3px #279654 solid
+}
+
+.filter h5{
+  font-family: 'Comfortaa', cursive;
+  font-weight: 300;
+  color: #279654;
+  width: 80%;
+  margin: auto;
+}
+
+@media screen and (max-width: 835px) {
+  .slides {
+    padding: 0;
+    width: 409px;
+  }
+
+  .slide {
+    top: 0;
+    opacity: 0;
+    width: 409px;
+    height: 420px;
+  }
+  .nav label {
+  width: 40px;
+  height: 100%;
+  display: none;
+  position: absolute;
+  opacity: 1;
+  z-index: 9;
+  cursor: pointer;
+  color: #269653;
+  font-size: 40pt;
+  line-height: 210px;
+  }
+  .nav-dots .nav-dot {
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    left: -10%;
+  }
+  .tab-content h2{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .tab-label{
+    font-size: 15px;
+    padding: 10px 0;
+  }
+}
+@media screen and (max-width: 635px) {
+  .filter{
+    padding-top: 50px !important;
+  }
+  .slides {
+    padding: 0;
+    width: 190px;
+    height: 209px;
+  }
+
+  .slide {
+    top: 0;
+    opacity: 0;
+    width: 190px;
+    height: 209px;
+  }
+  .nav-dots .nav-dot {
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+  }
+  .tab-label{
+    font-size: 12px;
+    font-weight: bold !important;
+  }
+  .nav-dots{
+    width: 130%;
+  }
+  .nav .next { right: -50px; }
+  .nav .prev { left: -25px; }
+  nav label {
+    width: 40px;
+    height: 100%;
+    display: none;
+    position: absolute;
+	  opacity: 1;
+    z-index: 9;
+    cursor: pointer;
+    color: #269653;
+    font-size: 40pt;
+    line-height: 200px;
+    /* font-family: "Arial", sans-serif; */
+  }
+  .spec-table td{
+    font-size:12px ;
+    padding: 5px 15px;
+  }
+  .tab-content{
+    padding: 20px 0;
+  }
+  .filter h5{
+    width: 100%;
+    font-size: 18px;
+  }
+  .spec-table{
+    width: 90%;
+  }
+  .filterImg{
+    width: 100% !important;
+    height: 300px;
+  }
+  .nsfImage{
+    width: 50% !important;
+  }
+  .nsf-text{
+    font-size: 12px;
+  }
+  .nsf-text h3{
+    font-size: 20px;
+  }
+}
