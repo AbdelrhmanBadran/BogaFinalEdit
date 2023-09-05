@@ -1356,19 +1356,19 @@ a{
 
 /******************************************************/
 
-.tabs {
+.tabs-container .tabs {
   position: relative;
   margin:  0;
 }
 
-.tab {
+.tabs-container .tab {
   width: 33.33%;
   /* float: left; */
 }
-.tab-switch {
+.tabs-container .tab-switch {
   display: none;
 }
-.tab-label {
+.tabs-container .tab-label {
   position: relative;
   display: block;
   padding: 1.5rem 1.618em;
@@ -1385,10 +1385,11 @@ a{
   transition: all 0.5s;
 
 }
-.tab-label:hover {
+
+.tabs-container .tab-label:hover {
   border-bottom: 0.125rem solid #28a745;
 }
-.tab-content {
+.tabs-container .tab-content {
   position: absolute;
   z-index: 1;
   left: 0;
@@ -1404,19 +1405,19 @@ a{
   padding-top: 20px ;
   padding-bottom: 30px;
 }
-.tab-content h2{
+.tabs-container .tab-content h2{
   color: #269653;
   font-weight: 300;
 
 }
-.tab-switch:checked + .tab-label {
+.tabs-container .tab-switch:checked + .tab-label {
   transition: all 0.35s;
   z-index: 1;
 }
-.tab-switch:checked +  .tab-label{
+.tabs-container .tab-switch:checked +  .tab-label{
   border-bottom: 0.125rem solid #28a745;
 }
-.tab-switch:checked + label + .tab-content {
+.tabs-container .tab-switch:checked + label + .tab-content {
   z-index: 2;
   opacity: 1;
   transition: all 0.35s;
@@ -1445,7 +1446,6 @@ a{
 .spec-table td{
   padding: 10px 20px;
   border-color: #269653;
-  border-width: 1px;
 }
 .table-green{
   color:#269653;
@@ -1624,7 +1624,7 @@ input#img-4:checked ~ .nav-dots label#img-dot-4
     height: 50px;
     padding: 0px;
   }
-  .tab-label{
+    .tab-label{
     font-size: 12px;
     font-weight: bold !important;
   }
