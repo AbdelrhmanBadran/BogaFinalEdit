@@ -46,6 +46,10 @@
               <li class="nav__item with-dropdown">
                 <a href="cart.html" class="dropdown-toggle nav__item-link active">cart</a>
               </li><!-- /.nav-item -->
+              
+              <li class="nav__item with-dropdown">
+                <a href="BStore.html" class="dropdown-toggle nav__item-link">Store</a>
+              </li><!-- /.nav-item -->
             </ul><!-- /.navbar-nav -->
             <div class="navbar-actions-wrap mr-5 mb-3">
               <div class="navbar-actions d-flex align-items-center">
@@ -181,17 +185,23 @@
                   <tr class="cart__product-action">
                     <td colspan="4">
                       <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-12 cart__product-action-content">
+                        <div class="col-sm-12 col-md-12 col-lg-8 cart__product-action-content">
                           <form class="d-flex flex-wrap">
+                            <input type="text" class="form-control mb-10 mr-10" placeholder="User Name">
+                            <input type="email" class="form-control mb-10 mr-10" placeholder="Email">
+                            <input type="phone" class="form-control mb-10 mr-10" placeholder="Phone">
                             <input type="text" class="form-control mb-10 mr-10" placeholder="Coupon Code">
-                            <button type="submit" class="btn btn__primary mb-10">Apply
-                              Coupon</button>
+                            <!-- <button type="submit" class="btn btn__primary mb-10">Apply
+                              Coupon</button> -->
                           </form>
+                          
+                        </div><!-- /.col-lg-2  -->
+                        <div class="col-md-4">
                           <div>
                             <a class="btn btn__secondary mr-10" href="#">update cart</a>
                             <a class="btn btn__primary" href="#checkout">Checkout</a>
                           </div>
-                        </div><!-- /.col-lg-2  -->
+                        </div>
                       </div><!-- /.row  -->
                     </td>
                   </tr>
@@ -584,7 +594,7 @@
             <div class="delivery-badges d-flex justify-content-between ">
               <a class="rounded-circle  logo-container d-flex justify-content-center align-items-center flex-column">
                 <img src="./assets/images/cari-removebg-preview.png" class="" alt="">
-                <p class="cari-p">20 AED</p>
+                <p class="cari-p">Free</p>
               </a>
               <a class="rounded-circle  logo-container d-flex justify-content-center align-items-center flex-column">
                 <img src="./assets/images/deliveroo.png"  alt="" class="">
@@ -613,8 +623,8 @@
               <p class="subtotal-price">AED <span id="subTotal">170</span></p>
             </div>
             <div class="cost d-flex justify-content-between   mt-3">
-              <p class="">Shipping Cost</p>
-              <p class="subtotal-price">AED <span id="shippingCost">20</span></p>
+              <p class="">Delivery fee</p>
+              <p class="subtotal-price">AED <span id="shippingCost">0</span></p>
             </div>
             <div class="cost d-flex justify-content-between  mt-3 ">
               <p class="">VAT/TAX</p>
@@ -822,7 +832,7 @@
   <script src="assets/js/jquery-3.3.1.min.js"></script>
   <script src="assets/js/plugins.js"></script>
   <!--*========shipping cost===========  -->
-  <!-- <script src="assets/js/cart.js"></script> -->
+  <script src="assets/js/cart.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 
