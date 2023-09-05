@@ -249,6 +249,15 @@ $(document).ready(function () {
   let homeSlider = $(".home-slider  .slider-cont");
   let menuSlider = $(".slick-slider");
 
+  $('.spec-slider').slick({
+    infinite: true,
+    arrows:false,
+    dots:true,
+    focusOnSelect: true,
+    dotsClass:'slick-dots',
+  });
+
+
   if (homeSlider.length) {
     homeSlider.slick({
       dots: false,
@@ -301,12 +310,27 @@ $("[data-toggle='tab']").click(function(){
   });
 
   let logos = document.getElementsByClassName('logo-container')
-
-  logos[0].classList.add('border-logo')
+  logos[0]?.classList.add('border-logo')
   
-  $('.logo-container').click(function () {
-  $(this).addClass('border-logo')
-  $(this).siblings().removeClass('border-logo')
+
+$('.nourish-link').click((e)=>{
+  e.preventDefault();
 })
 
+$('.nourish-link').click(function () {
+$(this).addClass('border-nourish')
+$(this).parent().siblings().children().removeClass('border-nourish')
+})  
+
+
+  
+$('.tabs-container').height($('.tab-content').height() + 50);
+
+
+
+
+$('.tab-label').click(function() {
+  let h = $(this).next().height() + $(this).height() + 45 ;
+  ($(this).parent().parent().parent().height(h));
+})
 
