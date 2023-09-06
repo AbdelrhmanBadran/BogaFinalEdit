@@ -9,7 +9,7 @@ let total  = parseInt(document.getElementById('total').innerHTML)
 
 //!=============================when start========================//
 
-logos[0].classList.add('border-logo')
+logos[0]?.classList.add('border-logo')
 calcTatal()
 
 //*============================Events========================//
