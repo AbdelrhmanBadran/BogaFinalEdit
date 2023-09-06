@@ -309,8 +309,8 @@ $("[data-toggle='tab']").click(function(){
   $('.slick-slider').slick('refresh');
   });
 
-  let logos = document.getElementsByClassName('logo-container')
-  logos[0]?.classList.add('border-logo')
+  let logoss = document.getElementsByClassName('logo-container')
+  logoss[0]?.classList.add('border-logo')
   
 
 $('.nourish-link').click((e)=>{
@@ -324,12 +324,12 @@ $(this).parent().siblings().children().removeClass('border-nourish')
 
 
   
-$('.tabs-container').height($('.tab-content').height() + 150);
+$('.tabs-container').height($('.tabs-container .tab-content').height() + 150);
 
 
 
 
-$('.tab-label').click(function() {
+$('.tabs-container .tab-label').click(function() {
   let h = $(this).next().height() + $(this).height() + 95 ;
   ($(this).parent().parent().parent().height(h));
 })
