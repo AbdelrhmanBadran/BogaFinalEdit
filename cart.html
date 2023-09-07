@@ -31,22 +31,21 @@
           <div class="collapse navbar-collapse" id="mainNavigation">
             <ul class="navbar-nav mr-auto">
               <li class="nav__item with-dropdown">
-                <a href="index.html" class="dropdown-toggle nav__item-link ">Home</a>
-              </li><!-- /.nav-item -->
-
-              <li class="nav__item with-dropdown">
-                <a href="menu-classic.html" class="dropdown-toggle nav__item-link">Menu</a>
+                <a href="index.html" class="dropdown-toggle nav__item-link">Home</a>
               </li><!-- /.nav-item -->
               <li class="nav__item with-dropdown">
                 <a href="BStory.html" class="dropdown-toggle nav__item-link">Story</a>
               </li><!-- /.nav-item -->
+              <li class="nav__item with-dropdown">
+                <a href="menu-classic.html" class="dropdown-toggle nav__item-link">Menu</a>
+              </li><!-- /.nav-item -->
+              
               <li class="nav__item with-dropdown">
                 <a href="contacts.html" class="dropdown-toggle nav__item-link">Contact</a>
               </li><!-- /.nav-item -->
               <li class="nav__item with-dropdown">
                 <a href="cart.html" class="dropdown-toggle nav__item-link active">cart</a>
               </li><!-- /.nav-item -->
-              
               <li class="nav__item with-dropdown">
                 <a href="BStore.html" class="dropdown-toggle nav__item-link">Store</a>
               </li><!-- /.nav-item -->
@@ -63,7 +62,7 @@
                       <div class="cart__item-img"><img src="assets/images/shop/grid/1.jpg" alt="thumb"></div>
                       <div class="cart__item-content">
                         <h6 class="cart__item-title">Roast Sea Trout</h6>
-                        <div class="cart__item-detail">AED 38.00</div>
+                        <div class="cart__item-detail">$ 38.00</div>
                         <i class="cart__item-delete">&times;</i>
                       </div><!-- /.cart-item-content -->
                     </li><!-- /.cart-item -->
@@ -71,15 +70,14 @@
                       <div class="cart__item-img"><img src="assets/images/shop/grid/3.jpg" alt="thumb"></div>
                       <div class="cart__item-content">
                         <h6 class="cart__item-title">Roasted Steak Rou</h6>
-                        <div class="cart__item-detail">AED 29.00</div>
+                        <div class="cart__item-detail">$ 29.00</div>
                         <i class="cart__item-delete">&times;</i>
                       </div><!-- /.cart-item-content -->
                     </li><!-- /.cart-item -->
-
                   </ul>
                   <div class="cart-subtotal">
                     <span>Subtotal:</span>
-                    <span class="color-theme">AED 67.00</span>
+                    <span class="color-theme">$67.00</span>
                   </div><!-- /.cart-subtotal -->
                   <div class="cart-action d-flex justify-content-center">
                     <a href="cart.html" class="btn btn__primary btn__hover2">View Cart</a>
@@ -594,23 +592,28 @@
             <div class="delivery-badges d-flex justify-content-between ">
               <a class="rounded-circle  logo-container d-flex justify-content-center align-items-center flex-column">
                 <img src="./assets/images/cari-removebg-preview.png" class="" alt="">
+                <input type="radio" name="delivery" id="cari" class="d-none">
                 <p class="cari-p">Free</p>
               </a>
               <a class="rounded-circle  logo-container d-flex justify-content-center align-items-center flex-column">
                 <img src="./assets/images/deliveroo.png"  alt="" class="">
+                <input type="radio" name="delivery" id="deliveroo" class="d-none">
                 <p>30 AED</p>
               </a>
               <a class="rounded-circle  logo-container d-flex justify-content-center align-items-center flex-column">
                 <img src="./assets/images/eas-removebg-preview.png" class="easy" alt="">
+                <input type="radio" name="delivery" id="eatEasy" class="d-none">
                 <p class="easy-p">35 AED</p>
 
               </a>
               <a class="rounded-circle  logo-container  d-flex justify-content-center align-items-center flex-column">
                 <img src="./assets/images/noon.png" class="noon" alt="" >
+                <input type="radio" name="delivery" id="noon" class="d-none">
                 <p class="noon-p">20 AED</p>
               </a>
               <a class="rounded-circle  logo-container d-flex flex-column align-items-center justify-content-around">
                 <img src="./assets/images/talabat.png" alt="" class="talabat">
+                <input type="radio" name="delivery" id="talabat" class="d-none">
                 <p class="talabat-p">40 AED</p>
 
               </a>
@@ -654,7 +657,7 @@
     
 
     
-    <footer id="footer" class="footer footer-layout1 py-5" style="background-color: #000;">
+    <footer id="footer" class="footer footer-layout1 pt-50" style="background-color: #000;">
       <div class="container">
         <div class="row justify-content-between">
           <div class="col-sm-12 col-md-3">
@@ -663,7 +666,7 @@
                 <img class="w-75 footer-logo" src="assets/images/logo white footer.png"alt=""/>
               </a>
               <p class="text-white pt-3 store-word">
-                Everyday, Including Our Fresh Bread , Sauces, Dressings , Jams And Creams Cheese
+                Live Right Everyday, Including Our Fresh Bread , Sauces, Dressings , Jams And Creams Cheese
               </p>
             </div>
             <div class="contact-list text-left py-3">
@@ -816,7 +819,7 @@
           </div> -->
           <div class="col-12 mt-20">
             <h4 class="text-center main-color copy" >
-                &copycopyright by Boga 2023
+              &#169;Copyright by Red Karpet studios 2023
             </h4>
           </div>
             
@@ -834,6 +837,7 @@
   <script src="assets/js/plugins.js"></script>
   <!--*========shipping cost===========  -->
   <script src="assets/js/cart.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 
