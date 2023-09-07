@@ -555,13 +555,14 @@ a{
   color: #28a745;
 }
 .form-title2{
-  padding-top: 25px;
+  padding: 40px;
 }
 .form-border .btn__primary{
   font-size: 22px;
 }
 .form-title h6 {
   font-size: 20px;
+  line-height: 1.6;
 }
 .phone-text{
   font-size: 16px;
@@ -572,10 +573,10 @@ a{
     font-weight: 400 !important;
     font-style: normal;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
   }
   .contact .form-title{
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 @media only screen and (max-width: 600px) {
