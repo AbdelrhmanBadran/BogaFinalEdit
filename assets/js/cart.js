@@ -41,8 +41,8 @@ let eleArray = Array.from(logos);
         calcTatal();
       }
       else if (eleArray.indexOf(ele) == 4) {
-        document.getElementById('shippingCost').innerHTML = 25;
-        shippingCost = 25;
+        document.getElementById('shippingCost').innerHTML = 40;
+        shippingCost = 40;
         calcTatal();
       }
     })
