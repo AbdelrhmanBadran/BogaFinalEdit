@@ -4,7 +4,6 @@
 let logos = document.getElementsByClassName('logo-container')
 let subTotal = parseInt(document.getElementById('subTotal').innerHTML)
 let shippingCost = parseInt(document.getElementById('shippingCost').innerHTML)
-let vatTax = parseInt(document.getElementById('vatTax').innerHTML)
 let total  = parseInt(document.getElementById('total').innerHTML)
 
 //!=============================when start========================//
@@ -56,7 +55,7 @@ let eleArray = Array.from(logos);
 //*============================function========================//
 
 function calcTatal(){
-  document.getElementById('total').innerHTML = subTotal + shippingCost + vatTax
+  document.getElementById('total').innerHTML = subTotal + shippingCost 
 }
 
 
