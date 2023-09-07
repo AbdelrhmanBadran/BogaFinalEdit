@@ -578,6 +578,7 @@ a{
   }
   .contact .form-title{
     font-size: 13px;
+    line-height: 2;
   }
 }
 @media only screen and (max-width: 600px) {
