@@ -378,16 +378,15 @@ a{
   width: 75%;
 }
 .leafBack h4 {
-  font-size: 4rem;
-  padding: 0 80px;
-  text-align: center;
-  font-weight: 400;
-  letter-spacing: 6px;
-  font-weight: 400;
+  font-size: 2.5rem;
+    padding: 0;
+    text-align: center;
+    font-weight: 600 !important;
+    letter-spacing: 0;
 }
 .leafBack h5 {
-  font-size: 2.6rem;
-    font-weight: 500;
+  font-size: 2.2rem;
+  font-weight: 500;
 
 }
 .leafBack h6 {
@@ -531,9 +530,11 @@ a{
 /* !==========================contact============================ */
 .contact{
   background-color: #fff;
+  padding: 0px !important;
 }
 .form-border {
-  padding: 50px 50px !important;
+  padding: 10px 10px !important;
+  transform: scale(0.8);
 }
 
 .btn__primary {
@@ -553,14 +554,28 @@ a{
   margin: 0 10px;
   color: #28a745;
 }
-
+.form-title2{
+  padding-top: 25px;
+}
+.form-border .btn__primary{
+  font-size: 22px;
+}
+.form-title h6 {
+  font-size: 20px;
+}
+.phone-text{
+  font-size: 16px;
+}
 @media (min-width: 992px) {
   .contact h1 {
-    font-size: 80px;
+    font-size: 50px;
     font-weight: 400 !important;
     font-style: normal;
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
+  }
+  .contact .form-title{
+    font-size: 12px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -574,9 +589,13 @@ a{
   .form-border {
     padding: 25px 10px !important;
     border-radius: 20px !important;
+    transform: scale(1);
   }
   .contact {
     padding: 0 !important;
+  }
+  .contact .form-title{
+    font-size: 12px;
   }
 }
 /* !==========================contact============================ */
@@ -589,6 +608,12 @@ a{
 #menulayout5 .row{
   margin: 0 !important;
 }
+/* #menulayout5 .card{
+  transform: scale(0.8);
+}
+#menulayout5 .nav-tabs{
+  transform: scale(0.9);
+} */
 .circle {
   width: 100px !important;
   height: 100px !important;
@@ -1319,12 +1344,13 @@ a{
 .store-word{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding-right: 15px;
-  font-size: 20px;
-  transform: scaleY(1.5);
+  font-size: 15px;
+  transform: scaleY(1);
 }
 .footer h3{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  transform: scaleY(1.5);
+  transform: scaleY(1);
+  font-size: 35px;
 }
 .menu-img{
   border-radius: 1rem;
@@ -1351,6 +1377,8 @@ a{
   }
   .footer h3 {
     transform: scaleY(1);
+    font-size: 25px;
+
   }
 }
 /*!==================================End Footer section******************/
@@ -1467,8 +1495,8 @@ a{
 
 .slides {
     padding: 0;
-    width: 609px;
-    height: 420px;
+    width: 509px;
+    height: 320px;
     display: block;
     margin: 30px auto;
     position: relative;
@@ -1490,8 +1518,8 @@ a{
 .slide {
     top: 0;
     opacity: 0;
-    width: 609px;
-    height: 420px;
+    width:509px;
+    height:320px;
     display: block;
     position: absolute;
     transform: translate(1,0);
@@ -1504,7 +1532,7 @@ a{
 }
 
 .nav label {
-  width: 40px;
+  width: 0px;
   height: 100%;
   display: none;
   position: absolute;
