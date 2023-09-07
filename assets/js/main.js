@@ -324,13 +324,17 @@ $(this).parent().siblings().children().removeClass('border-nourish')
 
 
   
-$('.tabs-container').height($('.tabs-container .tab-content').height() + 150);
+$('.tabs-container').height($('.tabs-container .tab-content').height() + $('.tab').height() + $('.tabs-container .tab-label').height());
 
 
 
 
 $('.tabs-container .tab-label').click(function() {
-  let h = $(this).next().height() + $(this).height() + 95 ;
+  let h = $(this).next().height() + $(this).height() + $('.tab').height()  ;
   ($(this).parent().parent().parent().height(h));
 })
 
+
+window.addEventListener('resize' , function() {
+  $('.tabs-container').height($('.tabs-container .tab-content').height() + $('.tab').height() + $('.tabs-container .tab-label').height());
+})
