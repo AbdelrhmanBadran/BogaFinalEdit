@@ -335,6 +335,6 @@ $('.tabs-container .tab-label').click(function() {
 })
 
 
-window.addEventListener('resize' , function() {
-  $('.tabs-container').height($('.tabs-container .tab-content').height() + $('.tab').height() + $('.tabs-container .tab-label').height());
-})
+// window.addEventListener('resize' , function() {
+//   $('.tabs-container').height($('.tabs-container .tab-content').height() + $('.tab').height() + $('.tabs-container .tab-label').height());
+// })
