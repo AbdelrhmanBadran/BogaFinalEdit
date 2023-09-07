@@ -1549,7 +1549,7 @@ a{
 
 
 
-.nav .next { right: -100px; }
+.nav .next { right: -50px; }
 .nav .prev { left: -100px; }
 
 input:checked + .slide-container  .slide {
