@@ -117,133 +117,162 @@
     <section id="ShoppinCcart" class="shop shopping-cart pb-50">
       <div class="container">
         <div class="row">
-          <div class="col-12">
-            <div class="d-flex justify-content-center w-100">
-              <span class="badge rounded-pill  text-white text-uppercase">cart</span>
+          <form>
+            <div class="col-12">
+              <div class="d-flex justify-content-center w-100">
+                <span class="badge rounded-pill  text-white text-uppercase">cart</span>
+              </div>
             </div>
-          </div>
-          <div class="col-sm-12 col-md-12 col-lg-12">
-            <div class="cart-table table-responsive">
-              <table class="table table-bordered">
-                <thead>
-                  <tr>
-                    <th>Product</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>Total</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="cart__product ">
-                    <td class="cart__product-item">
-                      <div class="cart__product-remove">
-                        <i class="fa fa-close"></i>
-                      </div>
-                      <div class="cart__product-img">
-                        <img src="assets/images/shop/grid/1.jpg" alt="product" />
-                      </div>
-                      <div class="cart__product-title">
-                        <h6>Roast Sea Trout</h6>
-                      </div>
-                    </td>
-                    <td class="cart__product-price" >AED <span id="p1">10.00</span></td>
-                    <td class="cart__product-quantity">
-                      <div class="product-quantity">
-                        <div class="quantity__input-wrap">
-                          <i class="fa fa-minus decrease-qty"></i>
-                          <input type="number" value="1" class="qty-input" id="q1">
-                          <i class="fa fa-plus increase-qty" id="plus1"></i>
+            <div class="col-sm-12 col-md-12 col-lg-12">
+
+              <div class="cart-table table-responsive">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Product</th>
+                      <th>Price</th>
+                      <th>Quantity</th>
+                      <th>Total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="cart__product ">
+                      <td class="cart__product-item">
+                        <div class="cart__product-remove">
+                          <i class="fa fa-close"></i>
                         </div>
-                      </div>
-                    </td>
-                    <td class="cart__product-total" id="TPrice1">AED 10.00</td>
-                  </tr>
-                  <tr class="cart__product ">
-                    <td class="cart__product-item">
-                      <div class="cart__product-img">
-                        <img src="assets/images/shop/grid/1.jpg" alt="product" />
-                      </div>
-                      <div class="cart__product-title">
-                        <h6>Roasted Steak Roulade</h6>
-                      </div>
-                      <i class="fa fa-close cart__product-remove"></i>
-                    </td>
-                    <td class="cart__product-price">AED 39.00</td>
-                    <td class="cart__product-quantity">
-                      <div class="product-quantity">
-                        <div class="quantity__input-wrap">
-                          <i class="fa fa-minus decrease-qty"></i>
-                          <input type="number" value="1" class="qty-input">
-                          <i class="fa fa-plus increase-qty"></i>
+                        <div class="cart__product-img">
+                          <img src="assets/images/shop/grid/1.jpg" alt="product" />
                         </div>
-                      </div>
-                    </td>
-                    <td class="cart__product-total">AED 39.00</td>
-                  </tr>
-                  <tr class="cart__product-action">
-                    <td colspan="4">
-                      <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-8 cart__product-action-content">
-                          <form class="d-flex flex-wrap">
-                            <input type="text" class="form-control mb-10 mr-10" placeholder="User Name">
-                            <input type="email" class="form-control mb-10 mr-10" placeholder="Email">
-                            <input type="phone" class="form-control mb-10 mr-10" placeholder="Phone">
-                            <input type="text" class="form-control mb-10 mr-10" placeholder="Coupon Code">
-                            <!-- <button type="submit" class="btn btn__primary mb-10">Apply
-                              Coupon</button> -->
-                          </form>
-                          
-                        </div><!-- /.col-lg-2  -->
-                        <div class="col-md-4">
-                          <div>
-                            <a class="btn btn__secondary mr-10" href="#">update cart</a>
-                            <a class="btn btn__primary" href="#checkout">Checkout</a>
+                        <div class="cart__product-title">
+                          <h6>Roast Sea Trout</h6>
+                        </div>
+                      </td>
+                      <td class="cart__product-price" >AED <span id="p1">10.00</span></td>
+                      <td class="cart__product-quantity">
+                        <div class="product-quantity">
+                          <div class="quantity__input-wrap">
+                            <i class="fa fa-minus decrease-qty"></i>
+                            <input type="number" value="1" class="qty-input" id="q1">
+                            <i class="fa fa-plus increase-qty" id="plus1"></i>
                           </div>
                         </div>
-                      </div><!-- /.row  -->
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+                      </td>
+                      <td class="cart__product-total" id="TPrice1">AED 10.00</td>
+                    </tr>
+                    <tr class="cart__product ">
+                      <td class="cart__product-item">
+                        <div class="cart__product-img">
+                          <img src="assets/images/shop/grid/1.jpg" alt="product" />
+                        </div>
+                        <div class="cart__product-title">
+                          <h6>Roasted Steak Roulade</h6>
+                        </div>
+                        <i class="fa fa-close cart__product-remove"></i>
+                      </td>
+                      <td class="cart__product-price">AED 39.00</td>
+                      <td class="cart__product-quantity">
+                        <div class="product-quantity">
+                          <div class="quantity__input-wrap">
+                            <i class="fa fa-minus decrease-qty"></i>
+                            <input type="number" value="1" class="qty-input">
+                            <i class="fa fa-plus increase-qty"></i>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="cart__product-total">AED 39.00</td>
+                    </tr>
+                    <tr class="cart__product-action">
+                      <td colspan="4">
+                        <div class="row">
+                          <div class="col-sm-12 col-md-12 col-lg-8 cart__product-action-content">
+                            <div class="d-flex flex-wrap">
+                              <input type="text" class="form-control mb-10 mr-10" placeholder="User Name">
+                              <input type="email" class="form-control mb-10 mr-10" placeholder="Email">
+                              <input type="phone" class="form-control mb-10 mr-10" placeholder="Phone">
+                              <input type="text" class="form-control mb-10 mr-10" placeholder="Coupon Code">
+                              <!-- <button type="submit" class="btn btn__primary mb-10">Apply
+                                Coupon</button> -->
+                            </div>
+                            
+                          </div><!-- /.col-lg-2  -->
+                          <div class="col-md-4">
+                            <div>
+                              <a class="btn btn__secondary mr-10" href="#">update cart</a>
+                              <a class="btn btn__primary" href="#checkout">Checkout</a>
+                            </div>
+                          </div>
+                        </div><!-- /.row  -->
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+
             </div><!-- /.cart-table -->
-          </div>
-          <div class="col-12">
-            <div class="delivery">
-              <p>Delivery Service Providers</p>
+            <div class="col-12">
+              <div class="delivery">
+                <p>Delivery Service Providers</p>
+              </div>
             </div>
-          </div>
-          <div class="col-12">
-            <div class="delivery-badges d-flex justify-content-between ">
-              <a class="rounded-circle  logo-container d-flex justify-content-center align-items-center flex-column">
-                <img src="./assets/images/cari-removebg-preview.png" class="" alt="">
-                <input type="radio" name="delivery" id="cari" class="d-none">
-                <p class="cari-p">Free</p>
-              </a>
-              <a class="rounded-circle  logo-container d-flex justify-content-center align-items-center flex-column">
-                <img src="./assets/images/deliveroo.png"  alt="" class="">
-                <input type="radio" name="delivery" id="deliveroo" class="d-none">
-                <p>30 AED</p>
-              </a>
-              <a class="rounded-circle  logo-container d-flex justify-content-center align-items-center flex-column">
-                <img src="./assets/images/eas-removebg-preview.png" class="easy" alt="">
-                <input type="radio" name="delivery" id="eatEasy" class="d-none">
-                <p class="easy-p">35 AED</p>
+            <div class="col-12">
+              <div class="delivery-badges d-flex justify-content-between ">
+                <a class="rounded-circle  logo-container d-flex justify-content-center align-items-center flex-column">
+                  <img src="./assets/images/cari-removebg-preview.png" class="" alt="">
+                  <input type="radio" name="delivery" id="cari" class="d-none">
+                  <p class="cari-p">Free</p>
+                </a>
+                <a class="rounded-circle  logo-container d-flex justify-content-center align-items-center flex-column">
+                  <img src="./assets/images/deliveroo.png"  alt="" class="">
+                  <input type="radio" name="delivery" id="deliveroo" class="d-none">
+                  <p>30 AED</p>
+                </a>
+                <a class="rounded-circle  logo-container d-flex justify-content-center align-items-center flex-column">
+                  <img src="./assets/images/eas-removebg-preview.png" class="easy" alt="">
+                  <input type="radio" name="delivery" id="eatEasy" class="d-none">
+                  <p class="easy-p">35 AED</p>
 
-              </a>
-              <a class="rounded-circle  logo-container  d-flex justify-content-center align-items-center flex-column">
-                <img src="./assets/images/noon.png" class="noon" alt="" >
-                <input type="radio" name="delivery" id="noon" class="d-none">
-                <p class="noon-p">20 AED</p>
-              </a>
-              <a class="rounded-circle  logo-container d-flex flex-column align-items-center justify-content-around">
-                <img src="./assets/images/talabat.png" alt="" class="talabat">
-                <input type="radio" name="delivery" id="talabat" class="d-none">
-                <p class="talabat-p">40 AED</p>
+                </a>
+                <a class="rounded-circle  logo-container  d-flex justify-content-center align-items-center flex-column">
+                  <img src="./assets/images/noon.png" class="noon" alt="" >
+                  <input type="radio" name="delivery" id="noon" class="d-none">
+                  <p class="noon-p">20 AED</p>
+                </a>
+                <a class="rounded-circle  logo-container d-flex flex-column align-items-center justify-content-around">
+                  <img src="./assets/images/talabat.png" alt="" class="talabat">
+                  <input type="radio" name="delivery" id="talabat" class="d-none">
+                  <p class="talabat-p">40 AED</p>
 
-              </a>
-              
+                </a>
+                
+              </div>
             </div>
-          </div>
+            <div class="col-lg-3 ml-auto cost-container">
+              <div class="cost d-flex justify-content-between  border-bottom">
+                <p class="">Subtottal :</p>
+                <p class="subtotal-price">AED <span id="subTotal">170</span></p>
+              </div>
+              <div class="cost d-flex justify-content-between  border-bottom  mt-3">
+                <p class="">Shipping :</p>
+                <p class="subtotal-price">AED <span id="shippingCost">0</span></p>
+              </div>
+              <div class="cost  d-flex justify-content-between  mt-4 ">
+                <p class="">Total :</p>
+                <p class="subtotal-price">AED <span id="total">195</span></p>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="submit ">
+                <button class="btn btn-out mx-auto d-block mt-50 rounded-pill" type="submit">
+                  <span>Place Order</span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        </div>
+      </div>
           <!-- <div class="col-sm-12 col-md-12 col-lg-12">
             <div class="cart__shiping">
               <h6>Calculate Shipping :</h6>
@@ -567,8 +596,6 @@
               </form>
             </div>
           </div> -->
-        </div><!-- /.row -->
-      </div><!-- /.container -->
     </section><!-- /.shopping-cart -->
 
 
@@ -577,11 +604,11 @@
       checkout
     ========================== -->
     
-    <div class="heading-title checkout py-5" id="checkout">
+    <div class="heading-title checkout pb-3" id="checkout">
     
       <div class="container">
         <div class="row">
-          <div class="col-12">
+          <!-- <div class="col-12">
             <div class="d-flex justify-content-center w-100 ">
               <span class="badge rounded-pill  text-white text-uppercase">checkout</span>
             </div>
@@ -619,7 +646,7 @@
                 </p>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- <div class="col-12">
             <div class="delivery">
               <p>Delivery Service Providers</p>
@@ -657,7 +684,7 @@
               
             </div>
           </div> -->
-          <div class="col-lg-3 ml-auto cost-container">
+          <!-- <div class="col-lg-3 ml-auto cost-container">
             <div class="cost d-flex justify-content-between  border-bottom">
               <p class="">Subtottal :</p>
               <p class="subtotal-price">AED <span id="subTotal">170</span></p>
@@ -670,15 +697,15 @@
               <p class="">Total :</p>
               <p class="subtotal-price">AED <span id="total">195</span></p>
             </div>
-          </div>
-          <div class="col-12">
+          </div> -->
+          <!-- <div class="col-12">
             <div class="submit ">
               <button class="btn btn-out mx-auto d-block mt-50 rounded-pill">
                 <span>Place Order</span>
               </button>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     
