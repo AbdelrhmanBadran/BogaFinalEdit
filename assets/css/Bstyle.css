@@ -1093,6 +1093,9 @@ a{
 .shop{
   padding: 0;
 }
+.cart-table {
+  margin-bottom: 0;
+}
 @media only screen and (max-width: 991px) {
   .navbar-actions-wrap {
     position: relative;
