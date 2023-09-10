@@ -103,7 +103,7 @@ a{
     padding-inline: 20px;
   }
   .home-slider .single-slide .text-cont h2 {
-    font-size: 35px !important;
+    font-size: 25px !important;
   }
 }
 
@@ -1580,7 +1580,7 @@ input:checked + .slide-container .nav label { display: block; }
 	position: relative;
 	display: inline-block;
 	/* background-color: rgba(0, 0, 0, 0.6); */
-  padding: 10px;
+  /* padding: 10px; */
   border: 1px #279654 solid
 }
 
@@ -1605,7 +1605,7 @@ input#img-4:checked ~ .nav-dots label#img-dot-4
   margin: auto;
 }
 
-@media screen and (max-width: 835px) {
+/* @media screen and (max-width: 835px) {
   .slides {
     padding: 0;
     width: 409px;
@@ -1643,7 +1643,8 @@ input#img-4:checked ~ .nav-dots label#img-dot-4
     font-size: 15px;
     padding: 10px 0;
   }
-}
+} */
+
 @media screen and (max-width: 635px) {
   .filter{
     padding-top: 50px !important;
@@ -1674,7 +1675,7 @@ input#img-4:checked ~ .nav-dots label#img-dot-4
   }
   .nav .next { right: -50px; }
   .nav .prev { left: -25px; }
-  nav label {
+  .nav label {
     width: 40px;
     height: 100%;
     display: none;
@@ -1683,7 +1684,7 @@ input#img-4:checked ~ .nav-dots label#img-dot-4
     z-index: 9;
     cursor: pointer;
     color: #269653;
-    font-size: 40pt;
+    font-size: 40pt ;
     line-height: 200px;
     /* font-family: "Arial", sans-serif; */
   }
@@ -1697,7 +1698,7 @@ input#img-4:checked ~ .nav-dots label#img-dot-4
   }
   .filter h5{
     width: 100%;
-    font-size: 18px;
+    font-size: 13px;
   }
   .spec-table{
     width: 90%;
@@ -1714,5 +1715,64 @@ input#img-4:checked ~ .nav-dots label#img-dot-4
   }
   .nsf-text h3{
     font-size: 20px;
+  }
+  .slick-dots {
+    position: absolute;
+    bottom: -5px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.tabs-container .tab-content h2 {
+  color: #269653;
+  font-weight: 300;
+  font-size: 20px;
+}
+}
+@media screen and (min-width: 635px) and (max-width : 1000px) {
+  .slides {
+    padding: 0;
+    width: 490px;
+    height: 409px;
+  }
+  .slide-container{
+    display: flex;
+    justify-content: center;
+  }
+  .slide {
+    top: 0;
+    opacity: 0;
+    width: 350px;
+    height: 350px;
+    margin-inline: auto;
+    display: block;
+  }
+  .slide img{
+    margin-inline: auto;
+    display: block;
+  }
+  .filter h5 {
+    font-size: 18px;
+  }
+  .nav-dots {
+    transform: translateY(0%);
+  }
+  .nav-dots .nav-dot {
+    top: -5px;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+  }
+  .filter{
+    padding: 30px 0;
+  }
+  .nav .next {
+    right: 0;
+  }
+  .nav .prev {
+    left: -50px;
   }
 }
