@@ -1691,6 +1691,7 @@ input#img-4:checked ~ .nav-dots label#img-dot-4
   .spec-table td{
     font-size:12px ;
     padding: 5px 15px;
+    border-width: 1px;
   }
   
   .tabs-container .tab-content{
